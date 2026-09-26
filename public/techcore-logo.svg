@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" role="img" aria-labelledby="title desc">
+  <title id="title">TECHCORE</title>
+  <desc id="desc">TECHCORE developer community logo</desc>
+  <circle cx="320" cy="320" r="286" fill="#fff" stroke="#14213d" stroke-width="12"/>
+  <path d="M128 280h110l42-35h-90l-30 25h-32m356 10h-92l-38-35h80l28 25h22" fill="none" stroke="#1261c9" stroke-width="9"/>
+  <path d="M190 150h260l-28 45H365v150l-48 55-48-55V195h-107z" fill="#14213d"/>
+  <path d="M414 188h72l43 48v42h-50v-24l-18-20h-47l-25 25v65l25 25h47l18-20v-24h50v42l-43 48h-72l-65-63v-111z" fill="#1261c9"/>
+  <path d="m315 278-28 25 28 25m40-50 28 25-28 25m-7-62-18 74" fill="none" stroke="#14213d" stroke-width="9"/>
+  <text x="320" y="440" text-anchor="middle" fill="#14213d" font-family="Arial, sans-serif" font-size="48" font-weight="800" letter-spacing="3">TECHCORE</text>
+  <text x="320" y="480" text-anchor="middle" fill="#14213d" font-family="Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="5">LEARN • BUILD • GROW</text>
+</svg>
