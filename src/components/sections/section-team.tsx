@@ -9,6 +9,14 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { cn } from "@/lib/utils";
 import MagicCard from "@/components/ui/magic-card";
+import {
+  CARD_HOVER,
+  CARD_HOVER_SPRING,
+  revealViewport,
+  useRevealVariants,
+  useStaggerContainer,
+  useStaggerItem,
+} from "@/components/ui/motion";
 
 export const team = [
   {
@@ -49,23 +57,16 @@ export const team = [
   },
 ];
 
-const fadeInAnimationVariants = {
-  initial: {
-    opacity: 0,
-    y: 60,
-  },
-  animate: (index: number) => ({
-    opacity: 1,
-    y: 0,
-    transition: {
-      delay: 0.05 * index,
-    },
-  }),
-};
+const SectionTeam = ({ id }: { id?: string }) => {
+  const variants = useRevealVariants();
+  const textContainer = useStaggerContainer();
+  const textItem = useStaggerItem();
 
-const SectionTeam = () => {
   return (
-    <section className="relative isolate overflow-hidden bg-background py-16 lg:py-28">
+    <section
+      id={id}
+      className="relative isolate overflow-hidden bg-background py-16 lg:py-28"
+    >
       <div className="container">
         <SectionTitle
           subtitle="TECHCORE is powered by developers with different skills, perspectives, and areas of expertise. Together, we learn, collaborate, and build."
@@ -79,50 +80,61 @@ const SectionTeam = () => {
           {team.map((item, index) => (
             <motion.div
               key={index}
-              variants={fadeInAnimationVariants}
-              initial="initial"
-              whileInView="animate"
-              viewport={{ once: true }}
-              transition={{
-                delay: 0.5,
-              }}
+              variants={variants}
+              initial="hidden"
+              whileInView="show"
+              viewport={revealViewport}
               custom={index}
+              whileHover={{ ...CARD_HOVER, transition: CARD_HOVER_SPRING }}
+              className="h-full"
             >
               <MagicCard className="h-full">
-              <img
-                src={item.image}
-                alt={item.name}
-                width={400}
-                height={250}
-                className="mb-6 aspect-[4/3] w-full rounded object-cover"
-              />
-              <div className="relative z-10">
-                {item.name && <h3 className="mb-1">{item.name}</h3>}
-                {item.position && (
-                  <span className="text-sm font-bold text-secondary">
-                    {item.position}
-                  </span>
-                )}
-                {item.description && (
-                  <p className="my-5 text-secondary">{item.description}</p>
-                )}
-              </div>
-              {item.socials && (
-                <div className="relative z-10 flex space-x-2">
-                  {item.socials.map((social, index) => (
-                    <a
-                      key={index}
-                      href={social.url}
-                      className={cn(
-                        "mb-2 flex h-10 w-10 items-center justify-center rounded text-white transition-colors hover:bg-foreground hover:text-white",
-                        social.color,
-                      )}
-                    >
-                      <FontAwesomeIcon icon={social.icon} width={15} />
-                    </a>
-                  ))}
-                </div>
-              )}
+                <motion.div
+                  className="relative z-10"
+                  variants={textContainer}
+                  initial="hidden"
+                  whileInView="show"
+                >
+                  <img
+                    src={item.image}
+                    alt={item.name}
+                    width={400}
+                    height={300}
+                    loading="lazy"
+                    className="mb-6 aspect-[4/3] w-full rounded object-cover"
+                  />
+                  <motion.div variants={textItem}>
+                    {item.name && <h3 className="mb-1">{item.name}</h3>}
+                    {item.position && (
+                      <span className="text-sm font-bold text-secondary">
+                        {item.position}
+                      </span>
+                    )}
+                  </motion.div>
+                  {item.description && (
+                    <motion.p variants={textItem} className="my-5 text-secondary">
+                      {item.description}
+                    </motion.p>
+                  )}
+                  {item.socials && (
+                    <motion.ul variants={textItem} className="relative z-10 flex space-x-2">
+                      {item.socials.map((social, socialIndex) => (
+                        <li key={socialIndex}>
+                          <a
+                            href={social.url}
+                            aria-label={`${item.name} profile`}
+                            className={cn(
+                              "mb-2 flex h-10 w-10 items-center justify-center rounded text-white transition-colors hover:bg-foreground hover:text-white",
+                              social.color,
+                            )}
+                          >
+                            <FontAwesomeIcon icon={social.icon} width={15} />
+                          </a>
+                        </li>
+                      ))}
+                    </motion.ul>
+                  )}
+                </motion.div>
               </MagicCard>
             </motion.div>
           ))}

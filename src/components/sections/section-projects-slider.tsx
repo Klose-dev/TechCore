@@ -6,18 +6,17 @@ import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 
-const SectionProjectsSlider = () => {
+const SectionProjectsSlider = ({ id }: { id?: string }) => {
   return (
-    <section className="py-16 lg:py-24">
+    <section id={id} className="py-16 lg:py-24">
       <div className="container">
         <SectionTitle
-          subtitle="Here are the best features that makes margin the most powerful, fast and
-        user-friendly platform."
+          subtitle="Real products built for fintech, health, logistics, and education teams."
           sectionClasses="mx-auto max-w-xl text-center mb-12"
           titleClasses="mb-3 text-center"
           subtitleClasses="text-md font-medium"
         >
-          Our Clients Get Results
+          What we have shipped
         </SectionTitle>
 
         <ProjectSlider

@@ -1,4 +1,3 @@
-import useFramerTransition from "@/hooks/use-transition";
 import SectionPageTitle from "@/components/sections/section-page-title";
 import SectionTeam from "@/components/sections/section-team";
 import SectionFAQ from "@/components/sections/section-faq";
@@ -18,7 +17,7 @@ const StudioValues = () => {
   const variants = useRevealVariants()
 
   return (
-    <section className="py-16 lg:py-24">
+    <section id="values" className="py-16 lg:py-24">
       <div className="container">
         <div className="rounded-2xl bg-muted p-8 dark:bg-slate-950">
           <h2 className="mb-6 text-center">What we value in our developers</h2>
@@ -45,20 +44,20 @@ const StudioValues = () => {
   )
 }
 
-const Developers = useFramerTransition(
+const Developers = () => (
   <>
     <Helmet>
       <title>Developers | TECHCORE</title>
     </Helmet>
     <main className="relative">
-      <SectionPageTitle subtitle="Meet the developers building projects, sharing knowledge, and creating solutions together.">
+      <SectionPageTitle id="about" subtitle="Meet the developers building projects, sharing knowledge, and creating solutions together.">
         Our Developers
       </SectionPageTitle>
-      <SectionTeam />
+      <SectionTeam id="team" />
       <StudioValues />
-      <SectionFAQ />
+      <SectionFAQ id="faq" />
     </main>
-  </>,
+  </>
 );
 
 export default Developers;

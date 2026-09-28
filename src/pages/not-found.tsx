@@ -1,9 +1,8 @@
-import useFramerTransition from "@/hooks/use-transition";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
-const NotFound = useFramerTransition(
+const NotFound = () => (
   <>
     <Helmet>
       <title>Page not found</title>
@@ -29,7 +28,7 @@ const NotFound = useFramerTransition(
         </div>
       </section>
     </main>
-  </>,
+  </>
 );
 
 export default NotFound;

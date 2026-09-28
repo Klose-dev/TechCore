@@ -58,11 +58,7 @@ export function MobileNav({ mainNavItems, triggerIcon = "default" }: MobileNavPr
         </div>
         <ScrollArea className="my-4 h-[calc(100vh-8rem)] pb-10 pl-6">
           <div className="pl-1 pr-7">
-            <Accordion
-              type="multiple"
-              defaultValue={mainNavItems && mainNavItems.map(item => item.title)}
-              className="w-full"
-            >
+            <Accordion type="multiple" className="w-full">
               {mainNavItems?.map((item, index) => (
                 <React.Fragment key={index}>
                   {item?.items && item.items.length > 0 ? (

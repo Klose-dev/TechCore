@@ -45,7 +45,7 @@ export default function QuotationForm() {
   function onSubmit(formData: FormInputs) {
     startTransition(() => {
       console.log(formData)
-      toast.success("Email sent!");
+      toast.success("Thanks, we have your details.");
       form.reset();
     });
   }
@@ -53,12 +53,12 @@ export default function QuotationForm() {
   return (
     <div className="relative z-[1] mx-auto max-w-4xl rounded bg-white px-[12%] py-[8%] dark:bg-slate-900">
       <SectionTitle
-        subtitle="You deserve more. We're proven to deliver"
+        subtitle="Tell us what you are building. We will tell you honestly whether we are the right team for it."
         sectionClasses="mx-auto max-w-xl text-center mb-12"
         titleClasses="mb-3 text-center"
         subtitleClasses="text-md font-medium"
       >
-        Get Free SEO Analysis
+        Get a free scoping call
       </SectionTitle>
       <Form {...form}>
         <form
@@ -136,7 +136,7 @@ export default function QuotationForm() {
               render={({ field }) => (
                 <FormItem>
                   <FormLabel className="dark:text-white">
-                    Service(s) Interested In
+                    What do you need built?
                   </FormLabel>
                   <Select onValueChange={field.onChange}>
                     <FormControl>
@@ -145,12 +145,14 @@ export default function QuotationForm() {
                       </SelectTrigger>
                     </FormControl>
                     <SelectContent>
-                      <SelectItem value="SEO">SEO</SelectItem>
-                      <SelectItem value="PPC">PPC</SelectItem>
-                      <SelectItem value="Content Marketing">
-                        Content Marketing
+                      <SelectItem value="Web App">Web App</SelectItem>
+                      <SelectItem value="Mobile App">Mobile App</SelectItem>
+                      <SelectItem value="Desktop App">Desktop App</SelectItem>
+                      <SelectItem value="AI Tool">AI Tool</SelectItem>
+                      <SelectItem value="Data System">Data System</SelectItem>
+                      <SelectItem value="Something else">
+                        Something else
                       </SelectItem>
-                      <SelectItem value="Google Ads">Google Ads</SelectItem>
                     </SelectContent>
                   </Select>
                   <FormMessage />
@@ -167,7 +169,7 @@ export default function QuotationForm() {
                   <FormLabel className="dark:text-white">Message</FormLabel>
                   <FormControl>
                     <Textarea
-                      placeholder="How can we help your business grow?"
+                      placeholder="What are you trying to build, and by when?"
                       rows={6}
                       {...field}
                     />

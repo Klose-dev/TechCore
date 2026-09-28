@@ -21,8 +21,8 @@ const HeaderLayout2 = () => {
   }, []);
 
   const stickyHeader = () => {
-    if (window !== undefined) {
-      let windowHeight = window.scrollY;
+    if (typeof window !== "undefined") {
+      const windowHeight = window.scrollY;
       windowHeight > 10
         ? setStickyClass("bg-white dark:bg-slate-900 lg:py-3 py-3")
         : setStickyClass("");

@@ -81,7 +81,7 @@ const StudioProcess = () => {
                 <RaysBackground color="#FFB366" opacity={0.08} rays={7} angle={205} />
               <div className="relative z-10">
                 <div className="mb-6 flex items-center gap-4 lg:block">
-                  <span className="relative z-10 flex h-16 w-16 shrink-0 items-center justify-center rounded-full border-2 border-border bg-white text-primary transition-colors hover:border-primary hover:bg-primary hover:text-white dark:bg-slate-800">
+                  <span className="relative z-10 flex h-16 w-16 shrink-0 items-center justify-center rounded-full border-2 border-border bg-white text-primary transition-colors hover:border-primary hover:bg-primary hover:text-primary-foreground dark:bg-slate-800">
                     <Icon width={24} height={24} />
                   </span>
                   <span className="text-xs font-bold uppercase tracking-[0.1em] text-primary lg:mt-6 lg:block">

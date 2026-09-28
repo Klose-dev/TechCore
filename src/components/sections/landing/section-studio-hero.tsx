@@ -15,7 +15,7 @@ const StudioHero = () => {
   const variants = useRevealVariants()
 
   return (
-    <section className="relative overflow-hidden pt-32 lg:pt-44">
+    <section id="overview" className="relative overflow-hidden pt-32 lg:pt-44">
       <div className="container">
         <div className="grid items-center gap-14 lg:grid-cols-2 lg:gap-20">
           <motion.div
@@ -24,16 +24,16 @@ const StudioHero = () => {
             animate="show"
             custom={0}
           >
-            <span className="inline-flex items-center gap-2 rounded-full bg-accent-soft px-4 py-1.5 text-xs font-bold uppercase tracking-[0.08em] text-primary">
+            <span className="inline-flex items-center gap-2 rounded-full bg-accent-soft px-3.5 py-1.5 text-[0.6875rem] font-bold uppercase tracking-[0.08em] text-primary">
               Software studio · Cameroon
             </span>
 
-            <h1 className="mb-6 mt-6 text-4xl sm:text-5xl lg:text-6xl">
+            <h1 className="mb-5 mt-5 text-[1.75rem] sm:text-4xl lg:text-[2.5rem]">
               We design and build software that{" "}
               <span className="text-primary">moves your business forward</span>
             </h1>
 
-            <p className="mb-8 max-w-xl text-lg leading-relaxed text-secondary">
+            <p className="mb-8 max-w-xl text-base leading-relaxed text-secondary">
               TechCore Studio is a small, senior team in Yaoundé building web
               apps, desktop apps, mobile apps, AI tools, and data systems — from
               the first sketch to a product your customers actually use.
@@ -42,7 +42,7 @@ const StudioHero = () => {
             <div className="mb-10 flex flex-col gap-4 sm:flex-row">
               <Link
                 to="/contact"
-                className="inline-flex h-14 items-center justify-center gap-2 rounded-lg bg-primary px-8 text-base font-bold text-white transition-colors hover:bg-primary/90"
+                className="inline-flex h-14 items-center justify-center gap-2 rounded-lg bg-primary px-8 text-base font-bold text-primary-foreground transition-colors hover:bg-primary/90"
               >
                 Start a Project
                 <ArrowRight width={18} height={18} />

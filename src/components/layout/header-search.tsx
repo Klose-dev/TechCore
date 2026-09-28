@@ -13,10 +13,17 @@ const STATIC_ENTRIES: Entry[] = [
   { title: "Our Developers", href: "/developers", group: "Page" },
 ]
 
+const NAV_ENTRIES: Entry[] = mainNav.flatMap((item) => {
+  const entries: Entry[] = []
+  if (item.href) entries.push({ title: item.title, href: item.href, group: "Page" })
+  for (const sub of item.items ?? []) {
+    if (sub.href) entries.push({ title: sub.title, href: sub.href, group: "Page" })
+  }
+  return entries
+})
+
 const ALL_ENTRIES: Entry[] = [
-  ...mainNav
-    .filter((item) => Boolean(item.href))
-    .map((item) => ({ title: item.title, href: item.href!, group: "Page" })),
+  ...NAV_ENTRIES,
   ...footerNav.flatMap((section) =>
     section.items.map((link) => ({
       title: link.title,
@@ -107,13 +114,13 @@ export const HeaderSearch = ({ className }: { className?: string }) => {
         onClick={() => setOpen(true)}
         aria-label="Search the site"
         className={cn(
-          "group hidden h-10 items-center gap-2 rounded-full border border-border bg-surface px-4 text-sm text-secondary transition-colors hover:border-primary hover:text-primary lg:flex",
+          "group hidden h-10 items-center gap-2 rounded-full border border-border bg-surface px-2.5 text-sm text-secondary transition-colors hover:border-primary hover:text-primary lg:flex xl:gap-2 xl:px-4",
           className,
         )}
       >
-        <Search width={15} height={15} />
-        <span className="pr-6">Search...</span>
-        <kbd className="rounded border border-border bg-muted px-1.5 py-0.5 text-[10px] font-bold text-secondary dark:bg-slate-700">
+        <Search width={15} height={15} className="shrink-0" />
+        <span className="hidden pr-6 xl:inline">Search...</span>
+        <kbd className="hidden rounded border border-border bg-muted px-1.5 py-0.5 text-[10px] font-bold text-secondary xl:inline dark:bg-slate-700">
           ⌘K
         </kbd>
       </button>

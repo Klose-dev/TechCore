@@ -1,36 +1,39 @@
 import { Button } from "@/components/ui/button";
 import { ChevronRightIcon } from "@heroicons/react/20/solid";
 
-const SectionHeroLayout3 = () => {
+const SectionHeroLayout3 = ({ id }: { id?: string }) => {
   return (
-    <div className="relative overflow-hidden bg-white dark:bg-transparent">
+    <div
+      id={id}
+      className="relative overflow-hidden bg-white dark:bg-transparent"
+    >
       <img
         src="hero/gradient_creative.png"
         className="dark:hidden absolute w-full h-full inset-0"
         sizes="100vw"
-        alt="consulting hero gradient"
+        alt="TechCore green gradient"
       />
       <img
         src="hero/gradient_creative_dark.png"
         className="hidden dark:block absolute w-full h-full inset-0"
-        alt="consulting hero gradient"
+        alt="TechCore green gradient"
       />
       <section className="pb-16 pt-28 md:pt-32 lg:pb-40 lg:pt-36">
         <div className="container relative z-10">
           <div className="flex flex-wrap lg:flex-nowrap lg:items-center lg:justify-between lg:space-x-10">
             <div className="mb-12 lg:mb-0 lg:w-2/5">
               <h1 className="text-headings text-3xl md:text-4xl lg:text-5xl xl:text-7xl">
-                Boost the Growth{" "}
+                Software that works{" "}
                 <span className="relative inline-block before:absolute before:bottom-3 before:-z-[1] before:h-2 before:w-full before:rounded-lg before:bg-primary before:bg-gradient-to-l before:from-primary before:to-tertiary before:opacity-70">
-                  of Your Company
+                  as hard as you do
                 </span>
               </h1>
               <p className="mb-10 text-xl">
-                Focus on engaging, reusable content that decrease the cost per
-                leads.
+                A small senior team in Yaounde builds web, mobile, desktop, and
+                AI software from discovery to launch in 30 days.
               </p>
               <Button size="lg">
-                Get Started
+                Start a Project
                 <ChevronRightIcon
                   width={20}
                   height={20}
@@ -39,7 +42,7 @@ const SectionHeroLayout3 = () => {
               </Button>
             </div>
             <div className="relative w-full text-center lg:w-1/2 lg:text-right">
-              <div className="absolute bottom-[10%] left-[5%] animate-fly rounded-[4rem] bg-white p-4 pr-11 shadow-sm sm:-left-[8%]">
+              <div className="absolute bottom-[10%] left-[5%] animate-fly rounded-[4rem] bg-white p-4 pr-11 shadow-sm dark:bg-slate-900 sm:-left-[8%]">
                 <div className="flex gap-4">
                   <span className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-[#D3E9FF]">
                     <svg
@@ -52,10 +55,10 @@ const SectionHeroLayout3 = () => {
                   </span>
                   <div className="text-left text-foreground">
                     <span className="block text-xs font-medium">
-                      More organic traffic
+                      Projects shipped
                     </span>
                     <span className="block text-2xl font-bold leading-none">
-                      150%
+                      40+
                     </span>
                   </div>
                 </div>
@@ -64,17 +67,17 @@ const SectionHeroLayout3 = () => {
                 src="hero/consulting_hero.png"
                 width={600}
                 height={600}
-                alt="consulting hero"
+                alt="TechCore Studio workspace"
                 className="inline-block"
               />
-              <div className="absolute right-[2%] top-1/3 animate-fly rounded-[4rem] bg-white p-4 pl-11 shadow-sm lg:-right-[5%]">
+              <div className="absolute right-[2%] top-1/3 animate-fly rounded-[4rem] bg-white p-4 pl-11 shadow-sm dark:bg-slate-900 lg:-right-[5%]">
                 <div className="flex gap-4">
                   <div className="text-left text-foreground">
                     <span className="block text-xs font-medium">
-                      More inbound leads
+                      Happy clients
                     </span>
                     <span className="block text-2xl font-bold leading-none">
-                      86%
+                      25+
                     </span>
                   </div>
                   <span className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-[#E3F9EE]">
@@ -88,7 +91,7 @@ const SectionHeroLayout3 = () => {
                   </span>
                 </div>
               </div>
-              <div className="absolute -right-[5%] bottom-0 animate-fly rounded-xl bg-white p-8 shadow-sm sm:bottom-0 sm:right-[5%]">
+              <div className="absolute -right-[5%] bottom-0 animate-fly rounded-xl bg-white p-8 shadow-sm dark:bg-slate-900 sm:bottom-0 sm:right-[5%]">
                 <div className="text-left">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -101,17 +104,14 @@ const SectionHeroLayout3 = () => {
                     <path d="M12.001 4.529c2.349-2.109 5.979-2.039 8.242.228 2.262 2.268 2.34 5.88.236 8.236l-8.48 8.492-8.478-8.492c-2.104-2.356-2.025-5.974.236-8.236 2.265-2.264 5.888-2.34 8.244-.228z" />
                   </svg>
                   <span className="block text-xs font-medium text-foreground">
-                    Happy customers
+                    Day sprint cycle
                   </span>
                   <span className="mb-4 block text-2xl font-bold text-foreground">
-                    +10k
+                    30
                   </span>
-                  <img
-                    src="happy_customers.png"
-                    alt="happy customers"
-                    width={152}
-                    height={24}
-                  />
+                  <span className="block text-xs font-medium text-secondary">
+                    Discovery to launch
+                  </span>
                 </div>
               </div>
             </div>

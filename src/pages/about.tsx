@@ -1,18 +1,24 @@
-import useFramerTransition from "@/hooks/use-transition";
 import SectionPageTitle from "@/components/sections/section-page-title";
 import SectionChecklist from "@/components/sections/section-checklist";
 import SectionTeam from "@/components/sections/section-team";
 import SectionCTA from "@/components/sections/section-cta";
 import Manifesto from "@/components/sections/manifesto";
 import MagicCard from "@/components/ui/magic-card";
-import { revealViewport, useRevealVariants } from "@/components/ui/motion";
+import {
+  CARD_HOVER,
+  CARD_HOVER_SPRING,
+  revealViewport,
+  useRevealVariants,
+  useStaggerContainer,
+  useStaggerItem,
+} from "@/components/ui/motion";
 import { Helmet } from "react-helmet";
 import { motion } from "framer-motion";
 import {
   Target,
-  Eye,
-  Compass,
-  HelpCircle,
+  Users,
+  Code2,
+  ShieldCheck,
   Lightbulb,
   type LucideIcon,
 } from "lucide-react";
@@ -26,39 +32,41 @@ const values: {
     title: "Our Mission",
     icon: Target,
     description:
-      "To create a space where developers can learn, collaborate, and build meaningful technology solutions together.",
+      "To ship software that solves a real problem for a real user, and to hand it over in a state the client can own.",
   },
   {
-    title: "Our Vision",
-    icon: Eye,
+    title: "How We Work",
+    icon: Users,
     description:
-      "To become a trusted developer ecosystem that equips people with the skills, networks, and experience to shape the future of technology.",
+      "You talk directly to the engineers building your product. No account managers, no relay race, no surprises in the invoice.",
   },
   {
-    title: "Our Values",
-    icon: Compass,
+    title: "What We Build",
+    icon: Code2,
     description:
-      "We believe in continuous learning, responsible building, respectful collaboration, and thoughtful innovation.",
+      "Web apps, mobile and desktop software, AI tooling, and data systems, designed to stay maintainable after we leave.",
   },
   {
-    title: "Why TECHCORE",
-    icon: HelpCircle,
+    title: "What We Guarantee",
+    icon: ShieldCheck,
     description:
-      "Because developers grow faster when they build together, share ideas, and challenge each other to improve.",
+      "Fixed scope agreed up front, working software every week, and a production release on the date we committed to.",
   },
   {
     title: "What We Believe",
     icon: Lightbulb,
     description:
-      "Technology is most valuable when it solves real problems, serves communities, and empowers people to create impact.",
+      "Technology is most valuable when it solves a genuine problem, serves the people using it, and is built to be handed on.",
   },
 ];
 
 const CoreValues = () => {
   const variants = useRevealVariants()
+  const textContainer = useStaggerContainer()
+  const textItem = useStaggerItem()
 
   return (
-    <section className="bg-muted py-16 dark:bg-slate-950 lg:py-24">
+    <section id="values" className="bg-muted py-16 dark:bg-slate-950 lg:py-24">
       <div className="container">
         <motion.div
           className="mb-12 text-center"
@@ -82,15 +90,31 @@ const CoreValues = () => {
               whileInView="show"
               viewport={revealViewport}
               custom={index}
+              whileHover={{ ...CARD_HOVER, transition: CARD_HOVER_SPRING }}
+              className="h-full"
             >
               <MagicCard className="h-full rounded-lg border border-border bg-white p-8 dark:bg-slate-900">
-                <span className="mb-6 flex h-12 w-12 items-center justify-center rounded-md bg-accent-soft text-primary transition-transform duration-300 group-hover:scale-110">
-                  <Icon width={22} height={22} />
-                </span>
-                <h3 className="mb-3 text-xl">{title}</h3>
-                <p className="text-base leading-relaxed text-secondary">
-                  {description}
-                </p>
+                <motion.div
+                  variants={textContainer}
+                  initial="hidden"
+                  whileInView="show"
+                >
+                  <motion.span
+                    variants={textItem}
+                    className="mb-6 flex h-12 w-12 items-center justify-center rounded-md bg-accent-soft text-primary transition-transform duration-300 group-hover:scale-110"
+                  >
+                    <Icon width={22} height={22} />
+                  </motion.span>
+                  <motion.h3 variants={textItem} className="mb-3 text-xl">
+                    {title}
+                  </motion.h3>
+                  <motion.p
+                    variants={textItem}
+                    className="text-base leading-relaxed text-secondary"
+                  >
+                    {description}
+                  </motion.p>
+                </motion.div>
               </MagicCard>
             </motion.div>
           ))}
@@ -100,25 +124,25 @@ const CoreValues = () => {
   );
 };
 
-const About = useFramerTransition(
+const About = () => (
   <>
     <Helmet>
       <title>About | TECHCORE</title>
     </Helmet>
     <main className="relative">
-      <SectionPageTitle subtitle="TECHCORE is a developer community created to bring passionate and ambitious developers together in an environment where knowledge, creativity, and collaboration can thrive.">
+      <SectionPageTitle id="about" subtitle="A small senior team in Yaounde, Cameroon. We design, build, and hand over software, and you talk directly to the people writing it.">
         Built by Developers. Driven by Innovation.
       </SectionPageTitle>
 
-      <Manifesto />
+      <Manifesto id="manifesto" />
 
       <CoreValues />
 
-      <SectionChecklist />
-      <SectionTeam />
-      <SectionCTA />
+      <SectionChecklist id="process" />
+      <SectionTeam id="team" />
+      <SectionCTA id="contact" />
     </main>
-  </>,
+  </>
 );
 
 export default About;

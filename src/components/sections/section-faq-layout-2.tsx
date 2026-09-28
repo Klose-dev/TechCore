@@ -67,8 +67,8 @@ const SectionFAQLayout2 = () => {
         </div>
         <div className="mt-4 text-center text-lg">
           Any Question?{" "}
-          <a href="mailto:support@margin.com" className="text-primary">
-            support@margin.com
+          <a href="mailto:hello@techcore.dev" className="text-primary">
+            hello@techcore.dev
           </a>
         </div>
       </div>

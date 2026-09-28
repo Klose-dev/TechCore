@@ -12,12 +12,14 @@ type ProjectListProps = {
   limit: number;
   showPagination: boolean;
   grid?: string;
+  id?: string;
 };
 
 export default function ProjectList({
   limit,
   grid,
   showPagination,
+  id,
 }: ProjectListProps) {
   const [_, setTotalItems] = useState<number | null>(null);
 
@@ -45,7 +47,7 @@ export default function ProjectList({
   if (error) return 'An error has occurred: ' + error.message
 
   const content = (
-    <>
+    <div id={id}>
       <div
         className={cn(
           "grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3",
@@ -57,8 +59,8 @@ export default function ProjectList({
             <Skeleton key={i} className="h-[45.6rem] w-full" />
           ))}
 
-        {data?.slice(0, limit).map((project: Post) => {
-          return <ProjectCard project={project} key={project.id} />;
+        {data?.slice(0, limit).map((project: Post, index: number) => {
+          return <ProjectCard project={project} key={project.id} index={index} />;
         })}
       </div>
       {data?.length && showPagination ? (
@@ -68,7 +70,7 @@ export default function ProjectList({
           >Load more</Button>
         </div>
       ) : null}
-    </>
+    </div>
   );
 
   return content;

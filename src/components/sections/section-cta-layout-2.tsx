@@ -1,13 +1,13 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
-const SectionCTALayout2 = () => {
+const SectionCTALayout2 = ({ id }: { id?: string }) => {
   return (
-    <section className="bg-secondary py-16 lg:py-32">
+    <section id={id} className="bg-secondary py-16 lg:py-32">
       <div className="container">
         <div className="text-center">
           <h2 className="mb-8 text-white">
-            Get, keep and grow more customers. We’re here to help.
+            Ready to build something that actually ships?
           </h2>
           <div className="inline-flex flex-wrap md:flex-nowrap">
             <Link to="/contact">
@@ -19,11 +19,12 @@ const SectionCTALayout2 = () => {
               OR
             </span>
             <Button
+              asChild
               size="lg"
               variant="outline"
               className="w-full text-white md:w-auto"
             >
-              Call 639.995.3959
+              <a href="mailto:hello@techcore.dev">Email hello@techcore.dev</a>
             </Button>
           </div>
         </div>

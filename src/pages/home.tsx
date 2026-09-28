@@ -1,5 +1,4 @@
 import { Helmet } from "react-helmet"
-import useFramerTransition from "@/hooks/use-transition"
 
 import StudioHero from "@/components/sections/landing/section-studio-hero"
 import StudioServices from "@/components/sections/landing/section-studio-services"
@@ -9,7 +8,7 @@ import StudioTeam from "@/components/sections/landing/section-studio-team"
 import StudioWork from "@/components/sections/landing/section-studio-work"
 import StudioCTA from "@/components/sections/landing/section-studio-cta"
 
-const Home = useFramerTransition(
+const Home = () => (
   <>
     <Helmet>
       <title>TechCore Studio | Web, Mobile, Desktop &amp; AI Software from Cameroon</title>
@@ -28,7 +27,7 @@ const Home = useFramerTransition(
       <StudioWork />
       <StudioCTA />
     </main>
-  </>,
+  </>
 )
 
 export default Home

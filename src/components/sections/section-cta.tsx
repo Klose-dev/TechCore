@@ -2,9 +2,9 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
-const SectionCTA = () => {
+const SectionCTA = ({ id }: { id?: string }) => {
   return (
-    <section className="pb-20 pt-8 lg:pb-28">
+    <section id={id} className="pb-20 pt-8 lg:pb-28">
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}

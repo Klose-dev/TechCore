@@ -1,4 +1,3 @@
-import useFramerTransition from "@/hooks/use-transition";
 import SectionPageTitle from "@/components/sections/section-page-title";
 import SectionIconBoxes from "@/components/sections/section-icon-boxes";
 import SectionCTA from "@/components/sections/section-cta";
@@ -46,7 +45,7 @@ const ServiceGrid = () => {
   const variants = useRevealVariants()
 
   return (
-    <section className="pb-16 lg:pb-24">
+    <section id="process" className="pb-16 lg:pb-24">
       <div className="container">
         <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
           {SERVICES.map(([title, description], index) => (
@@ -70,20 +69,20 @@ const ServiceGrid = () => {
   )
 }
 
-const Services = useFramerTransition(
+const Services = () => (
   <>
     <Helmet>
       <title>Services | TECHCORE</title>
     </Helmet>
     <main className="relative">
-      <SectionPageTitle subtitle="From experimental ideas to practical software systems, TECHCORE builds solutions that help people and teams move faster.">
+      <SectionPageTitle id="about" subtitle="From experimental ideas to practical software systems, TECHCORE builds solutions that help people and teams move faster.">
         What We Build
       </SectionPageTitle>
-      <SectionIconBoxes noTitle />
+      <SectionIconBoxes id="services" noTitle />
       <ServiceGrid />
-      <SectionCTA />
+      <SectionCTA id="contact" />
     </main>
-  </>,
+  </>
 );
 
 export default Services;

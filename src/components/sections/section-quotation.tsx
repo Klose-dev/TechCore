@@ -1,9 +1,12 @@
 import { motion } from "framer-motion";
 import QuotationForm from "@/components/forms/quotation-form";
 
-const SectionQuotation = () => {
+const SectionQuotation = ({ id }: { id?: string }) => {
   return (
-    <section className="relative bg-white py-16 before:absolute before:inset-0 before:z-[1] before:bg-foreground/75 lg:py-28">
+    <section
+      id={id}
+      className="relative bg-white py-16 before:absolute before:inset-0 before:z-[1] before:bg-foreground/75 lg:py-28"
+    >
       <img
         src="quotation_form_bg.jpg"
         alt="free quotation"

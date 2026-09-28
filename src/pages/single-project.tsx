@@ -1,4 +1,3 @@
-import useFramerTransition from "@/hooks/use-transition";
 import SectionQuotation from "@/components/sections/section-quotation";
 import PostData from "@/data/projects.json";
 import { Helmet } from "react-helmet";
@@ -7,7 +6,7 @@ const post = PostData[0];
 const featuredMedia = PostData[0].featuredmedia;
 const featuredImageSizes = featuredMedia?.["media_details"];
 
-const SingleProject = useFramerTransition(
+const SingleProject = () => (
   <>
     <Helmet>
       <title>Single Project</title>
@@ -96,7 +95,7 @@ const SingleProject = useFramerTransition(
       </section>
       <SectionQuotation />
     </main>
-  </>,
+  </>
 );
 
 export default SingleProject;

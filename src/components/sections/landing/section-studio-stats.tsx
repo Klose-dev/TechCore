@@ -37,7 +37,7 @@ const StudioStats = () => {
   const variants = useRevealVariants()
 
   return (
-    <section className="py-20 lg:py-28">
+    <section id="results" className="py-20 lg:py-28">
       <div className="container">
         <MagicCard className="rounded-lg border border-border bg-surface p-8 lg:p-12">
           <RaysBackground color="#007A3E" opacity={0.06} rays={14} angle={195} />

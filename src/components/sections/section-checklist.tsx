@@ -1,8 +1,8 @@
 import CheckLineIcon from "remixicon-react/CheckLineIcon";
 
-const SectionChecklist = () => {
+const SectionChecklist = ({ id }: { id?: string }) => {
   return (
-    <section className="pb-28">
+    <section id={id} className="pb-28">
       <div className="container relative z-10 -mt-20">
         <div className="mx-auto max-w-6xl">
           <div className="rounded-md bg-white px-6 py-16 text-center shadow-lg dark:bg-slate-800 dark:shadow-slate-850/20 sm:px-12">

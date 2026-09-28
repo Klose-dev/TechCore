@@ -1,218 +1,284 @@
-[
-	{
-		"id": 1,
-		"date": "2023-05-31T04:34:12",
-    "date_gmt": "2023-05-31T04:34:12",
-		"modified": "2023-11-26T00:13:22",
-    "modified_gmt": "2023-11-26T00:13:22",
-		"slug": "effective-marketing-for-start-ups",
-		"title": {
-      "rendered": "Effective Marketing for Start-Ups"
+﻿[
+    {
+        "id":  1,
+        "date":  "2026-08-18T09:12:00",
+        "date_gmt":  "2026-08-18T08:12:00",
+        "modified":  "2026-09-02T10:40:00",
+        "modified_gmt":  "2026-09-02T09:40:00",
+        "slug":  "shipping-a-web-app-in-thirty-days",
+        "title":  {
+                      "rendered":  "Shipping a Web App in 30 Days"
+                  },
+        "content":  {
+                        "rendered":  "\u003cp\u003eThirty days sounds short until you scope it properly. Here is how we break a web application down so it actually ships, and what we deliberately leave for the second release.\u003c/p\u003e\n\n\u003ch2\u003eWeek one is decisions, not code\u003c/h2\u003e\n\u003cp\u003eWe spend the first week agreeing the scope, the data model, and the two or three screens that matter most. Everything else is written down as a later release. The goal is not to build less. The goal is to know exactly what \u003cem\u003edone\u003c/em\u003e means before we open an editor.\u003c/p\u003e\n\n\u003ch2\u003eWorking software every week\u003c/h2\u003e\n\u003cp\u003eYou get a deployable build every Friday from week two onwards. No staging theatre, no big-bang reveal. If something is wrong, you see it on a real URL while there is still time to change it.\u003c/p\u003e\n\n\u003ch2\u003eWhat we push to later\u003c/h2\u003e\n\u003cp\u003eSettings screens nobody has asked for, edge cases around a feature you may not ship, and anything that depends on a decision you have not made. Cutting scope early is the single biggest reason our projects finish on time.\u003c/p\u003e\n\n\u003cblockquote\u003e\u003cp\u003eIf it is not in the week-one scope list, it is not in this release.\u003c/p\u003e\u003c/blockquote\u003e\n\n\u003ch2\u003eChoosing the stack\u003c/h2\u003e\n\u003cp\u003eWe default to a modern React and TypeScript setup with a straightforward API layer, because it is fast to build with and easy for your next developer to pick up. We will argue for something else when the problem actually calls for it.\u003c/p\u003e"
+                    },
+        "excerpt":  {
+                        "rendered":  "Thirty days sounds short until you scope it properly. Here is how we break a web application down so it actually ships."
+                    },
+        "categories":  [
+                           {
+                               "id":  11,
+                               "name":  "Engineering"
+                           },
+                           {
+                               "id":  12,
+                               "name":  "Process"
+                           }
+                       ],
+        "author":  {
+                       "name":  "TECHCORE",
+                       "avatar_urls":  {
+                                           "24":  "/team/1.jpg",
+                                           "48":  "/team/1.jpg",
+                                           "96":  "/team/1.jpg"
+                                       }
+                   },
+        "yoast_head_json":  {
+                                "description":  "How TECHCORE scopes, builds, and ships a production web application in a 30-day sprint.",
+                                "og_description":  "How we break a web application down so it actually ships in 30 days."
+                            },
+        "featuredmedia":  {
+                              "alt_text":  "Developer working on a web application on a laptop",
+                              "media_details":  {
+                                                    "width":  1200,
+                                                    "height":  800,
+                                                    "source_url":  "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format\u0026fit=crop\u0026w=1200\u0026q=85"
+                                                }
+                          }
     },
-		"content": {
-      "rendered": "\n<p>The goal of this new editor is to make adding rich content to WordPress simple and enjoyable. This whole post is composed of <em>pieces of content</em>—somewhat similar to LEGO bricks—that you can move around and interact with. Move your <a href=\"#\">cursor around</a> and you’ll notice the different blocks light up with outlines and arrows. Press the arrows to reposition blocks quickly, without fearing about losing things in the process of copying and pasting.</p>\n\n\n\n<p>What you are reading now is a <strong>text block</strong> the most basic block of all. The text block has its own controls to be moved freely around the post&#8230;</p>\n\n\n\n<hr class=\"wp-block-separator has-css-opacity is-style-dots\"/>\n\n\n\n<p>Headings are separate blocks as well, which helps with the outline and organization of your content.</p>\n\n\n\n<h2 class=\"wp-block-heading\">A Picture is Worth a Thousand Words</h2>\n\n\n\n<p>Handling images and media with the utmost care is a primary focus of the new editor. Hopefully, you’ll find aspects of adding captions or going full-width with your pictures much easier and robust than before.</p>\n\n\n\n<figure class=\"wp-block-image size-large\"><img decoding=\"async\" src=\"https://margin.deothemes.com/wp-content/uploads/2018/05/post_7-1.jpg\" alt=\"\"/></figure>\n\n\n\n<p>Try selecting and removing or editing the caption, now you don’t have to be careful about selecting the image or other text by mistake and ruining the presentation.</p>\n\n\n\n<h2 class=\"wp-block-heading\">The <em>Inserter</em> Tool</h2>\n\n\n\n<p>Imagine everything that WordPress can do is available to you quickly and in the same place on the interface. No need to figure out HTML tags, classes, or remember complicated shortcode syntax. That’s the spirit behind the inserter—the <code>(+)</code> button you’ll see around the editor—which allows you to browse all available content blocks and add them into your post. Plugins and themes are able to register their own, opening up all sort of possibilities for rich editing and publishing.</p>\n\n\n\n<h4 class=\"wp-block-heading\">Amazing Tables</h4>\n\n\n\n<figure class=\"wp-block-table is-style-stripes\"><table><tbody><tr><td><strong>ID</strong></td><td><strong>Name</strong></td><td><strong>Last Name</strong></td><td><strong>Profession</strong></td></tr><tr><td>1</td><td>Kazumi</td><td>Mishima</td><td>Designer</td></tr><tr><td>2</td><td>Sergei</td><td>Dragounov</td><td>Developer</td></tr><tr><td>3</td><td>Jozie</td><td>Rizal</td><td>Support</td></tr></tbody></table></figure>\n\n\n\n<p>Go give it a try, you may discover things WordPress can already add into your posts that you didn’t know about. Here’s a short list of what you can currently find there:</p>\n\n\n\n<ul>\n<li>Text &amp; Headings</li>\n\n\n\n<li>Images &amp; Videos</li>\n\n\n\n<li>Galleries</li>\n\n\n\n<li>Embeds, like YouTube, Tweets, or other WordPress posts.</li>\n\n\n\n<li>Layout blocks, like Buttons, Hero Images, Separators, etc.</li>\n\n\n\n<li>And <em>Lists</em> like this one of course 🙂</li>\n</ul>\n\n\n\n<p>Imagine everything that WordPress can do is available to you quickly and in the same place on the interface. No need to figure out HTML tags, classes, or remember complicated shortcode syntax.</p>\n\n\n\n<blockquote class=\"wp-block-quote has-text-align-center is-style-default\">\n<p>The editor will endeavor to create a new page and post building experience that makes writing rich posts effortless, and has “blocks” to make it easy what today might take shortcodes, custom HTML, or “mystery meat” embed discovery.</p>\n<cite>Matt Mullenweg, 2017</cite></blockquote>\n\n\n\n<p>The information corresponding to the source of the quote is a separate text field, similar to captions under images, so the structure of the quote is protected even if you select, modify, or remove the source. It’s always easy to add it back.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Media Rich</h2>\n\n\n\n<p>If you combine the new <strong>wide</strong> and <strong>full-wide</strong> alignments with galleries, you can create a very media rich layout, very quickly:</p>\n\n\n\n<figure class=\"wp-block-image alignfull\"><img decoding=\"async\" src=\"https://margin.deothemes.com/wp-content/uploads/2018/05/post_2-1-769x501.jpg\" alt=\"post_2\" class=\"wp-image-224\"/></figure>\n\n\n\n<p>Sure, the full-wide image can be pretty big. But sometimes the image is worth it.</p>\n\n\n\n<p>The above is a gallery with just two images. It’s an easier way to create visually appealing layouts, without having to deal with floats. You can also easily convert the gallery back to individual images again, by using the block switcher.</p>\n\n\n\n<p>Any block can opt into these alignments. The embed block has them also, and is responsive out of the box:</p>\n\n\n\n<p class=\"has-text-align-center\"><em> If you want to learn more about how to build additional blocks, or if you are interested in helping with the project, head over to the GitHub repository. </em></p>\n\n\n\n<div class=\"wp-block-button aligncenter\"><a class=\"wp-block-button__link wp-element-button\" href=\"https://deothemes.com/\">Purchase Now</a></div>\n\n\n\n<p></p>\n",
-      "protected": false
+    {
+        "id":  2,
+        "date":  "2026-08-04T09:12:00",
+        "date_gmt":  "2026-08-04T08:12:00",
+        "modified":  "2026-08-28T11:05:00",
+        "modified_gmt":  "2026-08-28T10:05:00",
+        "slug":  "offline-first-mobile-apps-for-low-connectivity",
+        "title":  {
+                      "rendered":  "Offline-First Mobile Apps for Low-Connectivity Markets"
+                  },
+        "content":  {
+                        "rendered":  "\u003cp\u003eMost mobile app architecture assumes a reliable connection. In parts of Cameroon, that assumption quietly breaks your product. Offline-first is not a luxury feature when your users are in the field.\u003c/p\u003e\n\n\u003ch2\u003eAssume the network is the exception\u003c/h2\u003e\n\u003cp\u003eWe design so that the local device is the source of truth and the server is a synchronisation target. Every write lands on the device first, is queued, and is retried when connectivity returns. The user experience never depends on a request finishing.\u003c/p\u003e\n\n\u003ch2\u003eConflict resolution has to be decided up front\u003c/h2\u003e\n\u003cp\u003eThe hard question is not offline, it is two people editing the same record while one of them is offline. We pick a strategy during week one, usually last-write-wins with an audit trail, and we tell you what we chose and why.\u003c/p\u003e\n\n\u003ch2\u003eMake sync visible\u003c/h2\u003e\n\u003cp\u003eA silent sync that sometimes fails is worse than an honest one. We show people when their work has been saved locally, when it is queued, and when it has actually reached the server.\u003c/p\u003e\n\n\u003ch2\u003eTest it on a bad network, not a good one\u003c/h2\u003e\n\u003cp\u003eEvery release goes out on a throttled connection with packets dropped. If the app only works on office wifi, it does not work.\u003c/p\u003e"
+                    },
+        "excerpt":  {
+                        "rendered":  "Most mobile apps assume a reliable connection. In parts of Cameroon, that assumption quietly breaks your product."
+                    },
+        "categories":  [
+                           {
+                               "id":  13,
+                               "name":  "Mobile"
+                           },
+                           {
+                               "id":  11,
+                               "name":  "Engineering"
+                           }
+                       ],
+        "author":  {
+                       "name":  "TECHCORE",
+                       "avatar_urls":  {
+                                           "24":  "/team/1.jpg",
+                                           "48":  "/team/1.jpg",
+                                           "96":  "/team/1.jpg"
+                                       }
+                   },
+        "yoast_head_json":  {
+                                "description":  "Designing mobile apps that keep working when the network does not.",
+                                "og_description":  "Why offline-first changes how you build mobile apps for low-connectivity markets."
+                            },
+        "featuredmedia":  {
+                              "alt_text":  "Mobile phone interface being tested outdoors",
+                              "media_details":  {
+                                                    "width":  1200,
+                                                    "height":  800,
+                                                    "source_url":  "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format\u0026fit=crop\u0026w=1200\u0026q=85"
+                                                }
+                          }
     },
-		"excerpt": {
-      "rendered": "<p>The goal of this new editor is to make adding rich content to WordPress simple and enjoyable.</p>\n",
-      "protected": false
+    {
+        "id":  3,
+        "date":  "2026-07-21T09:12:00",
+        "date_gmt":  "2026-07-21T08:12:00",
+        "modified":  "2026-08-11T08:30:00",
+        "modified_gmt":  "2026-08-11T07:30:00",
+        "slug":  "where-llm-features-actually-help",
+        "title":  {
+                      "rendered":  "Where LLM Features Actually Help (And Where They Do Not)"
+                  },
+        "content":  {
+                        "rendered":  "\u003cp\u003eMost AI features we are asked for are a chatbot bolted onto a product nobody wanted. The ones that survive contact with real users tend to be much smaller and much more specific.\u003c/p\u003e\n\n\u003ch2\u003eGood candidates\u003c/h2\u003e\n\u003cp\u003eSummarising a long document a user already has. Turning messy free text into structured fields. Drafting something the user is going to edit anyway. Search that understands intent rather than keywords. These save the user typing and are easy to evaluate.\u003c/p\u003e\n\n\u003ch2\u003eBad candidates\u003c/h2\u003e\n\u003cp\u003eAnything the user can do faster themselves with one click. Anything where a wrong answer is expensive and the user cannot tell it is wrong. Anything where the model is being asked to invent facts rather than reorganise information you gave it.\u003c/p\u003e\n\n\u003ch2\u003eDesign for the wrong answer\u003c/h2\u003e\n\u003cp\u003eShow the source. Let people correct it. Make it obvious when the model is unsure. A feature that quietly returns nonsense destroys more trust than having no feature at all.\u003c/p\u003e\n\n\u003ch2\u003eMeasure the boring thing\u003c/h2\u003e\n\u003cp\u003eTime to completion and correction rate tell you whether the feature works. Number of prompts does not. We instrument both before we ship.\u003c/p\u003e"
+                    },
+        "excerpt":  {
+                        "rendered":  "Most AI features are a chatbot bolted onto a product nobody wanted. The ones that survive tend to be smaller and more specific."
+                    },
+        "categories":  [
+                           {
+                               "id":  14,
+                               "name":  "AI"
+                           },
+                           {
+                               "id":  15,
+                               "name":  "Product"
+                           }
+                       ],
+        "author":  {
+                       "name":  "TECHCORE",
+                       "avatar_urls":  {
+                                           "24":  "/team/1.jpg",
+                                           "48":  "/team/1.jpg",
+                                           "96":  "/team/1.jpg"
+                                       }
+                   },
+        "yoast_head_json":  {
+                                "description":  "A practical framework for deciding which LLM features are worth building.",
+                                "og_description":  "Which LLM features survive contact with real users, and which are just a chatbot."
+                            },
+        "featuredmedia":  {
+                              "alt_text":  "Abstract visualisation of a language model processing data",
+                              "media_details":  {
+                                                    "width":  1200,
+                                                    "height":  800,
+                                                    "source_url":  "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format\u0026fit=crop\u0026w=1200\u0026q=85"
+                                                }
+                          }
     },
-		"featuredmedia": {
-			"alt_text": "Effective Marketing for Start-Ups",
-			"media_details": {
-				"width": 1440,
-				"height": 972,
-				"source_url": "https://wordpress-597675-3975829.cloudwaysapps.com/wp-content/uploads/2018/05/post_1.jpg"
-			}
-		},
-		"author": {
-			"name": "Aleksandr",
-			"avatar_urls": {
-				"48": "https://secure.gravatar.com/avatar/e6a038aeaab23728d95493fb14b95bf6?s=48&d=mm&r=g" 
-			}
-		},
-		"categories": [
-			{
-				"id": 1,
-				"name": "Advertisement" 
-			},
-			{
-				"id": 2,
-				"name": "Content Marketing" 
-			}
-    ]
-	},
-	{
-		"id": 2,
-		"date": "2023-05-31T04:34:12",
-    "date_gmt": "2023-05-31T04:34:12",
-		"modified": "2023-11-25T00:13:22",
-    "modified_gmt": "2023-11-25T00:13:22",
-		"slug": "offer-an-outrageous-or-daily-deal",
-		"title": {
-      "rendered": "Offer an Outrageous or Daily Deal"
+    {
+        "id":  4,
+        "date":  "2026-07-07T09:12:00",
+        "date_gmt":  "2026-07-07T08:12:00",
+        "modified":  "2026-07-30T14:15:00",
+        "modified_gmt":  "2026-07-30T13:15:00",
+        "slug":  "pipelines-that-people-actually-trust",
+        "title":  {
+                      "rendered":  "Data Pipelines That People Actually Trust"
+                  },
+        "content":  {
+                        "rendered":  "\u003cp\u003eA dashboard nobody believes is worse than no dashboard. Trust in data is a design problem, and it is mostly won in the first ten minutes of someone opening the thing.\u003c/p\u003e\n\n\u003ch2\u003eShow the data\u0027s age on everything\u003c/h2\u003e\n\u003cp\u003eEvery number carries a timestamp. If a figure is four hours stale, say so right next to it rather than in a footer nobody reads. Staleness you can see is a problem; staleness you have to guess about destroys confidence.\u003c/p\u003e\n\n\u003ch2\u003eMake the pipeline visible\u003c/h2\u003e\n\u003cp\u003eWhen something fails, the person looking at the dashboard should be able to see that it failed, when, and why, without opening a monitoring tool. A red row saying \u003cem\u003epayment_events, failed 14:32, bad schema\u003c/em\u003e beats a support ticket.\u003c/p\u003e\n\n\u003ch2\u003eReconcile against something a human trusts\u003c/h2\u003e\n\u003cp\u003ePick one number the business already reconciles manually, and match it weekly. If your pipeline and their spreadsheet agree, you have earned the right to show them the other forty numbers.\u003c/p\u003e\n\n\u003ch2\u003eIdempotency is not optional\u003c/h2\u003e\n\u003cp\u003eJobs will retry. Networks will drop. Write every step so running it twice is safe, or your totals will drift and you will spend a week explaining a number nobody can reproduce.\u003c/p\u003e"
+                    },
+        "excerpt":  {
+                        "rendered":  "A dashboard nobody believes is worse than no dashboard. Trust in data is mostly won in the first ten minutes."
+                    },
+        "categories":  [
+                           {
+                               "id":  16,
+                               "name":  "Data"
+                           },
+                           {
+                               "id":  11,
+                               "name":  "Engineering"
+                           }
+                       ],
+        "author":  {
+                       "name":  "TECHCORE",
+                       "avatar_urls":  {
+                                           "24":  "/team/1.jpg",
+                                           "48":  "/team/1.jpg",
+                                           "96":  "/team/1.jpg"
+                                       }
+                   },
+        "yoast_head_json":  {
+                                "description":  "How to build data pipelines and dashboards that people trust.",
+                                "og_description":  "Why data trust is won in the first ten minutes of opening a dashboard."
+                            },
+        "featuredmedia":  {
+                              "alt_text":  "Analytics dashboard displayed on a monitor",
+                              "media_details":  {
+                                                    "width":  1200,
+                                                    "height":  800,
+                                                    "source_url":  "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format\u0026fit=crop\u0026w=1200\u0026q=85"
+                                                }
+                          }
     },
-		"content": {
-      "rendered": "\n<p>The goal of this new editor is to make adding rich content to WordPress simple and enjoyable. This whole post is composed of <em>pieces of content</em>—somewhat similar to LEGO bricks—that you can move around and interact with. Move your <a href=\"#\">cursor around</a> and you’ll notice the different blocks light up with outlines and arrows. Press the arrows to reposition blocks quickly, without fearing about losing things in the process of copying and pasting.</p>\n\n\n\n<p>What you are reading now is a <strong>text block</strong> the most basic block of all. The text block has its own controls to be moved freely around the post&#8230;</p>\n\n\n\n<hr class=\"wp-block-separator has-css-opacity is-style-dots\"/>\n\n\n\n<p>Headings are separate blocks as well, which helps with the outline and organization of your content.</p>\n\n\n\n<h2 class=\"wp-block-heading\">A Picture is Worth a Thousand Words</h2>\n\n\n\n<p>Handling images and media with the utmost care is a primary focus of the new editor. Hopefully, you’ll find aspects of adding captions or going full-width with your pictures much easier and robust than before.</p>\n\n\n\n<figure class=\"wp-block-image size-large\"><img decoding=\"async\" src=\"https://margin.deothemes.com/wp-content/uploads/2018/05/post_7-1.jpg\" alt=\"\"/></figure>\n\n\n\n<p>Try selecting and removing or editing the caption, now you don’t have to be careful about selecting the image or other text by mistake and ruining the presentation.</p>\n\n\n\n<h2 class=\"wp-block-heading\">The <em>Inserter</em> Tool</h2>\n\n\n\n<p>Imagine everything that WordPress can do is available to you quickly and in the same place on the interface. No need to figure out HTML tags, classes, or remember complicated shortcode syntax. That’s the spirit behind the inserter—the <code>(+)</code> button you’ll see around the editor—which allows you to browse all available content blocks and add them into your post. Plugins and themes are able to register their own, opening up all sort of possibilities for rich editing and publishing.</p>\n\n\n\n<h4 class=\"wp-block-heading\">Amazing Tables</h4>\n\n\n\n<figure class=\"wp-block-table is-style-stripes\"><table><tbody><tr><td><strong>ID</strong></td><td><strong>Name</strong></td><td><strong>Last Name</strong></td><td><strong>Profession</strong></td></tr><tr><td>1</td><td>Kazumi</td><td>Mishima</td><td>Designer</td></tr><tr><td>2</td><td>Sergei</td><td>Dragounov</td><td>Developer</td></tr><tr><td>3</td><td>Jozie</td><td>Rizal</td><td>Support</td></tr></tbody></table></figure>\n\n\n\n<p>Go give it a try, you may discover things WordPress can already add into your posts that you didn’t know about. Here’s a short list of what you can currently find there:</p>\n\n\n\n<ul>\n<li>Text &amp; Headings</li>\n\n\n\n<li>Images &amp; Videos</li>\n\n\n\n<li>Galleries</li>\n\n\n\n<li>Embeds, like YouTube, Tweets, or other WordPress posts.</li>\n\n\n\n<li>Layout blocks, like Buttons, Hero Images, Separators, etc.</li>\n\n\n\n<li>And <em>Lists</em> like this one of course 🙂</li>\n</ul>\n\n\n\n<p>Imagine everything that WordPress can do is available to you quickly and in the same place on the interface. No need to figure out HTML tags, classes, or remember complicated shortcode syntax.</p>\n\n\n\n<blockquote class=\"wp-block-quote has-text-align-center is-style-default\">\n<p>The editor will endeavor to create a new page and post building experience that makes writing rich posts effortless, and has “blocks” to make it easy what today might take shortcodes, custom HTML, or “mystery meat” embed discovery.</p>\n<cite>Matt Mullenweg, 2017</cite></blockquote>\n\n\n\n<p>The information corresponding to the source of the quote is a separate text field, similar to captions under images, so the structure of the quote is protected even if you select, modify, or remove the source. It’s always easy to add it back.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Media Rich</h2>\n\n\n\n<p>If you combine the new <strong>wide</strong> and <strong>full-wide</strong> alignments with galleries, you can create a very media rich layout, very quickly:</p>\n\n\n\n<figure class=\"wp-block-image alignfull\"><img decoding=\"async\" src=\"https://margin.deothemes.com/wp-content/uploads/2018/05/post_2-1-769x501.jpg\" alt=\"post_2\" class=\"wp-image-224\"/></figure>\n\n\n\n<p>Sure, the full-wide image can be pretty big. But sometimes the image is worth it.</p>\n\n\n\n<p>The above is a gallery with just two images. It’s an easier way to create visually appealing layouts, without having to deal with floats. You can also easily convert the gallery back to individual images again, by using the block switcher.</p>\n\n\n\n<p>Any block can opt into these alignments. The embed block has them also, and is responsive out of the box:</p>\n\n\n\n<p class=\"has-text-align-center\"><em> If you want to learn more about how to build additional blocks, or if you are interested in helping with the project, head over to the GitHub repository. </em></p>\n\n\n\n<div class=\"wp-block-button aligncenter\"><a class=\"wp-block-button__link wp-element-button\" href=\"https://deothemes.com/\">Purchase Now</a></div>\n\n\n\n<p></p>\n",
-      "protected": false
+    {
+        "id":  5,
+        "date":  "2026-06-23T09:12:00",
+        "date_gmt":  "2026-06-23T08:12:00",
+        "modified":  "2026-07-14T09:45:00",
+        "modified_gmt":  "2026-07-14T08:45:00",
+        "slug":  "what-a-good-product-design-review-catches",
+        "title":  {
+                      "rendered":  "What a Good Product Design Review Actually Catches"
+                  },
+        "content":  {
+                        "rendered":  "\u003cp\u003eA design review is not a meeting about whether people like the colours. Done properly it catches the expensive mistakes while they are still cheap to fix.\u003c/p\u003e\n\n\u003ch2\u003eIt catches the thing you cannot un-send\u003c/h2\u003e\n\u003cp\u003eOnce a user has seen a flow, changing it costs you. Reviews exist to change the flow before anyone depends on it, which is why we run them in week one rather than the last week.\u003c/p\u003e\n\n\u003ch2\u003eIt catches inconsistent states\u003c/h2\u003e\n\u003cp\u003eLoading, empty, error, and permission-denied are where most products quietly break. A review that only looks at the happy path has not really reviewed anything.\u003c/p\u003e\n\n\u003ch2\u003eIt catches the assumption nobody stated\u003c/h2\u003e\n\u003cp\u003eSomeone decided the user knows what a workspace is. Nobody wrote that down, so nobody questioned it. Reviews are largely the act of making hidden assumptions visible and then arguing about them.\u003c/p\u003e\n\n\u003ch2\u003eWhat it is not\u003c/h2\u003e\n\u003cp\u003eIt is not a vote. It is not a place to relitigate the brief. And it is not the moment to add a feature, because a feature added in review is a feature nobody scoped, costed, or tested.\u003c/p\u003e"
+                    },
+        "excerpt":  {
+                        "rendered":  "A design review is not a meeting about whether people like the colours. It catches the expensive mistakes early."
+                    },
+        "categories":  [
+                           {
+                               "id":  15,
+                               "name":  "Product"
+                           },
+                           {
+                               "id":  17,
+                               "name":  "Design"
+                           }
+                       ],
+        "author":  {
+                       "name":  "TECHCORE",
+                       "avatar_urls":  {
+                                           "24":  "/team/1.jpg",
+                                           "48":  "/team/1.jpg",
+                                           "96":  "/team/1.jpg"
+                                       }
+                   },
+        "yoast_head_json":  {
+                                "description":  "What a genuinely useful product design review catches, and what it is not.",
+                                "og_description":  "Design reviews are about hidden assumptions, not colour preferences."
+                            },
+        "featuredmedia":  {
+                              "alt_text":  "Design wireframes and notes on a desk",
+                              "media_details":  {
+                                                    "width":  1200,
+                                                    "height":  800,
+                                                    "source_url":  "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?auto=format\u0026fit=crop\u0026w=1200\u0026q=85"
+                                                }
+                          }
     },
-		"excerpt": {
-      "rendered": "<p>The goal of this new editor is to make adding rich content to WordPress simple and enjoyable.</p>\n",
-      "protected": false
-    },
-		"featuredmedia": {
-			"alt_text": "Offer an Outrageous or Daily Deal",
-			"media_details": {
-				"width": 1440,
-				"height": 972,
-				"source_url": "https://wordpress-597675-3975829.cloudwaysapps.com/wp-content/uploads/2018/05/post_2.jpg"
-			}
-		},
-		"categories": [
-			{
-				"id": 2,
-				"name": "Content Marketing" 
-			}
-    ]
-	},
-	{
-		"id": 3,
-		"date": "2023-05-31T04:34:12",
-    "date_gmt": "2023-05-31T04:34:12",
-		"modified": "2023-11-24T00:13:22",
-    "modified_gmt": "2023-11-24T00:13:22",
-		"slug": "investigate-your-competition",
-		"title": {
-      "rendered": "Investigate your Competition"
-    },
-		"content": {
-      "rendered": "\n<p>The goal of this new editor is to make adding rich content to WordPress simple and enjoyable. This whole post is composed of <em>pieces of content</em>—somewhat similar to LEGO bricks—that you can move around and interact with. Move your <a href=\"#\">cursor around</a> and you’ll notice the different blocks light up with outlines and arrows. Press the arrows to reposition blocks quickly, without fearing about losing things in the process of copying and pasting.</p>\n\n\n\n<p>What you are reading now is a <strong>text block</strong> the most basic block of all. The text block has its own controls to be moved freely around the post&#8230;</p>\n\n\n\n<hr class=\"wp-block-separator has-css-opacity is-style-dots\"/>\n\n\n\n<p>Headings are separate blocks as well, which helps with the outline and organization of your content.</p>\n\n\n\n<h2 class=\"wp-block-heading\">A Picture is Worth a Thousand Words</h2>\n\n\n\n<p>Handling images and media with the utmost care is a primary focus of the new editor. Hopefully, you’ll find aspects of adding captions or going full-width with your pictures much easier and robust than before.</p>\n\n\n\n<figure class=\"wp-block-image size-large\"><img decoding=\"async\" src=\"https://margin.deothemes.com/wp-content/uploads/2018/05/post_7-1.jpg\" alt=\"\"/></figure>\n\n\n\n<p>Try selecting and removing or editing the caption, now you don’t have to be careful about selecting the image or other text by mistake and ruining the presentation.</p>\n\n\n\n<h2 class=\"wp-block-heading\">The <em>Inserter</em> Tool</h2>\n\n\n\n<p>Imagine everything that WordPress can do is available to you quickly and in the same place on the interface. No need to figure out HTML tags, classes, or remember complicated shortcode syntax. That’s the spirit behind the inserter—the <code>(+)</code> button you’ll see around the editor—which allows you to browse all available content blocks and add them into your post. Plugins and themes are able to register their own, opening up all sort of possibilities for rich editing and publishing.</p>\n\n\n\n<h4 class=\"wp-block-heading\">Amazing Tables</h4>\n\n\n\n<figure class=\"wp-block-table is-style-stripes\"><table><tbody><tr><td><strong>ID</strong></td><td><strong>Name</strong></td><td><strong>Last Name</strong></td><td><strong>Profession</strong></td></tr><tr><td>1</td><td>Kazumi</td><td>Mishima</td><td>Designer</td></tr><tr><td>2</td><td>Sergei</td><td>Dragounov</td><td>Developer</td></tr><tr><td>3</td><td>Jozie</td><td>Rizal</td><td>Support</td></tr></tbody></table></figure>\n\n\n\n<p>Go give it a try, you may discover things WordPress can already add into your posts that you didn’t know about. Here’s a short list of what you can currently find there:</p>\n\n\n\n<ul>\n<li>Text &amp; Headings</li>\n\n\n\n<li>Images &amp; Videos</li>\n\n\n\n<li>Galleries</li>\n\n\n\n<li>Embeds, like YouTube, Tweets, or other WordPress posts.</li>\n\n\n\n<li>Layout blocks, like Buttons, Hero Images, Separators, etc.</li>\n\n\n\n<li>And <em>Lists</em> like this one of course 🙂</li>\n</ul>\n\n\n\n<p>Imagine everything that WordPress can do is available to you quickly and in the same place on the interface. No need to figure out HTML tags, classes, or remember complicated shortcode syntax.</p>\n\n\n\n<blockquote class=\"wp-block-quote has-text-align-center is-style-default\">\n<p>The editor will endeavor to create a new page and post building experience that makes writing rich posts effortless, and has “blocks” to make it easy what today might take shortcodes, custom HTML, or “mystery meat” embed discovery.</p>\n<cite>Matt Mullenweg, 2017</cite></blockquote>\n\n\n\n<p>The information corresponding to the source of the quote is a separate text field, similar to captions under images, so the structure of the quote is protected even if you select, modify, or remove the source. It’s always easy to add it back.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Media Rich</h2>\n\n\n\n<p>If you combine the new <strong>wide</strong> and <strong>full-wide</strong> alignments with galleries, you can create a very media rich layout, very quickly:</p>\n\n\n\n<figure class=\"wp-block-image alignfull\"><img decoding=\"async\" src=\"https://margin.deothemes.com/wp-content/uploads/2018/05/post_2-1-769x501.jpg\" alt=\"post_2\" class=\"wp-image-224\"/></figure>\n\n\n\n<p>Sure, the full-wide image can be pretty big. But sometimes the image is worth it.</p>\n\n\n\n<p>The above is a gallery with just two images. It’s an easier way to create visually appealing layouts, without having to deal with floats. You can also easily convert the gallery back to individual images again, by using the block switcher.</p>\n\n\n\n<p>Any block can opt into these alignments. The embed block has them also, and is responsive out of the box:</p>\n\n\n\n<p class=\"has-text-align-center\"><em> If you want to learn more about how to build additional blocks, or if you are interested in helping with the project, head over to the GitHub repository. </em></p>\n\n\n\n<div class=\"wp-block-button aligncenter\"><a class=\"wp-block-button__link wp-element-button\" href=\"https://deothemes.com/\">Purchase Now</a></div>\n\n\n\n<p></p>\n",
-      "protected": false
-    },
-		"excerpt": {
-      "rendered": "<p>The goal of this new editor is to make adding rich content to WordPress simple and enjoyable.</p>\n",
-      "protected": false
-    },
-		"featuredmedia": {
-			"alt_text": "Investigate your Competition",
-			"media_details": {
-				"width": 1440,
-				"height": 972,
-				"source_url": "https://wordpress-597675-3975829.cloudwaysapps.com/wp-content/uploads/2018/05/post_3.jpg"
-			}
-		},
-		"categories": [
-			{
-				"id": 2,
-				"name": "Content Marketing" 
-			}
-    ]
-	},
-	{
-		"id": 4,
-		"date": "2023-05-31T04:34:12",
-    "date_gmt": "2023-05-31T04:34:12",
-		"modified": "2023-11-23T00:13:22",
-    "modified_gmt": "2023-11-23T00:13:22",
-		"slug": "using-technology-to-maximize-efficiency",
-		"title": {
-      "rendered": "Using Technology to Maximize Efficiency"
-    },
-		"content": {
-      "rendered": "\n<p>The goal of this new editor is to make adding rich content to WordPress simple and enjoyable. This whole post is composed of <em>pieces of content</em>—somewhat similar to LEGO bricks—that you can move around and interact with. Move your <a href=\"#\">cursor around</a> and you’ll notice the different blocks light up with outlines and arrows. Press the arrows to reposition blocks quickly, without fearing about losing things in the process of copying and pasting.</p>\n\n\n\n<p>What you are reading now is a <strong>text block</strong> the most basic block of all. The text block has its own controls to be moved freely around the post&#8230;</p>\n\n\n\n<hr class=\"wp-block-separator has-css-opacity is-style-dots\"/>\n\n\n\n<p>Headings are separate blocks as well, which helps with the outline and organization of your content.</p>\n\n\n\n<h2 class=\"wp-block-heading\">A Picture is Worth a Thousand Words</h2>\n\n\n\n<p>Handling images and media with the utmost care is a primary focus of the new editor. Hopefully, you’ll find aspects of adding captions or going full-width with your pictures much easier and robust than before.</p>\n\n\n\n<figure class=\"wp-block-image size-large\"><img decoding=\"async\" src=\"https://margin.deothemes.com/wp-content/uploads/2018/05/post_7-1.jpg\" alt=\"\"/></figure>\n\n\n\n<p>Try selecting and removing or editing the caption, now you don’t have to be careful about selecting the image or other text by mistake and ruining the presentation.</p>\n\n\n\n<h2 class=\"wp-block-heading\">The <em>Inserter</em> Tool</h2>\n\n\n\n<p>Imagine everything that WordPress can do is available to you quickly and in the same place on the interface. No need to figure out HTML tags, classes, or remember complicated shortcode syntax. That’s the spirit behind the inserter—the <code>(+)</code> button you’ll see around the editor—which allows you to browse all available content blocks and add them into your post. Plugins and themes are able to register their own, opening up all sort of possibilities for rich editing and publishing.</p>\n\n\n\n<h4 class=\"wp-block-heading\">Amazing Tables</h4>\n\n\n\n<figure class=\"wp-block-table is-style-stripes\"><table><tbody><tr><td><strong>ID</strong></td><td><strong>Name</strong></td><td><strong>Last Name</strong></td><td><strong>Profession</strong></td></tr><tr><td>1</td><td>Kazumi</td><td>Mishima</td><td>Designer</td></tr><tr><td>2</td><td>Sergei</td><td>Dragounov</td><td>Developer</td></tr><tr><td>3</td><td>Jozie</td><td>Rizal</td><td>Support</td></tr></tbody></table></figure>\n\n\n\n<p>Go give it a try, you may discover things WordPress can already add into your posts that you didn’t know about. Here’s a short list of what you can currently find there:</p>\n\n\n\n<ul>\n<li>Text &amp; Headings</li>\n\n\n\n<li>Images &amp; Videos</li>\n\n\n\n<li>Galleries</li>\n\n\n\n<li>Embeds, like YouTube, Tweets, or other WordPress posts.</li>\n\n\n\n<li>Layout blocks, like Buttons, Hero Images, Separators, etc.</li>\n\n\n\n<li>And <em>Lists</em> like this one of course 🙂</li>\n</ul>\n\n\n\n<p>Imagine everything that WordPress can do is available to you quickly and in the same place on the interface. No need to figure out HTML tags, classes, or remember complicated shortcode syntax.</p>\n\n\n\n<blockquote class=\"wp-block-quote has-text-align-center is-style-default\">\n<p>The editor will endeavor to create a new page and post building experience that makes writing rich posts effortless, and has “blocks” to make it easy what today might take shortcodes, custom HTML, or “mystery meat” embed discovery.</p>\n<cite>Matt Mullenweg, 2017</cite></blockquote>\n\n\n\n<p>The information corresponding to the source of the quote is a separate text field, similar to captions under images, so the structure of the quote is protected even if you select, modify, or remove the source. It’s always easy to add it back.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Media Rich</h2>\n\n\n\n<p>If you combine the new <strong>wide</strong> and <strong>full-wide</strong> alignments with galleries, you can create a very media rich layout, very quickly:</p>\n\n\n\n<figure class=\"wp-block-image alignfull\"><img decoding=\"async\" src=\"https://margin.deothemes.com/wp-content/uploads/2018/05/post_2-1-769x501.jpg\" alt=\"post_2\" class=\"wp-image-224\"/></figure>\n\n\n\n<p>Sure, the full-wide image can be pretty big. But sometimes the image is worth it.</p>\n\n\n\n<p>The above is a gallery with just two images. It’s an easier way to create visually appealing layouts, without having to deal with floats. You can also easily convert the gallery back to individual images again, by using the block switcher.</p>\n\n\n\n<p>Any block can opt into these alignments. The embed block has them also, and is responsive out of the box:</p>\n\n\n\n<p class=\"has-text-align-center\"><em> If you want to learn more about how to build additional blocks, or if you are interested in helping with the project, head over to the GitHub repository. </em></p>\n\n\n\n<div class=\"wp-block-button aligncenter\"><a class=\"wp-block-button__link wp-element-button\" href=\"https://deothemes.com/\">Purchase Now</a></div>\n\n\n\n<p></p>\n",
-      "protected": false
-    },
-		"excerpt": {
-      "rendered": "<p>The goal of this new editor is to make adding rich content to WordPress simple and enjoyable.</p>\n",
-      "protected": false
-    },
-		"featuredmedia": {
-			"alt_text": "Using Technology to Maximize Efficiency",
-			"media_details": {
-				"width": 1440,
-				"height": 972,
-				"source_url": "https://wordpress-597675-3975829.cloudwaysapps.com/wp-content/uploads/2018/05/post_4.jpg"
-			}
-		},
-		"categories": [
-			{
-				"id": 1,
-				"name": "Tips" 
-			}
-    ]
-	},
-	{
-		"id": 5,
-		"date": "2023-05-31T04:34:12",
-    "date_gmt": "2023-05-31T04:34:12",
-		"modified": "2023-11-23T00:13:22",
-    "modified_gmt": "2023-11-23T00:13:22",
-		"slug": "breaking-one-task-down-into-bite-size-pieces",
-		"title": {
-      "rendered": "Breaking One Task Down Into Bite-Size Pieces"
-    },
-		"content": {
-      "rendered": "\n<p>The goal of this new editor is to make adding rich content to WordPress simple and enjoyable. This whole post is composed of <em>pieces of content</em>—somewhat similar to LEGO bricks—that you can move around and interact with. Move your <a href=\"#\">cursor around</a> and you’ll notice the different blocks light up with outlines and arrows. Press the arrows to reposition blocks quickly, without fearing about losing things in the process of copying and pasting.</p>\n\n\n\n<p>What you are reading now is a <strong>text block</strong> the most basic block of all. The text block has its own controls to be moved freely around the post&#8230;</p>\n\n\n\n<hr class=\"wp-block-separator has-css-opacity is-style-dots\"/>\n\n\n\n<p>Headings are separate blocks as well, which helps with the outline and organization of your content.</p>\n\n\n\n<h2 class=\"wp-block-heading\">A Picture is Worth a Thousand Words</h2>\n\n\n\n<p>Handling images and media with the utmost care is a primary focus of the new editor. Hopefully, you’ll find aspects of adding captions or going full-width with your pictures much easier and robust than before.</p>\n\n\n\n<figure class=\"wp-block-image size-large\"><img decoding=\"async\" src=\"https://margin.deothemes.com/wp-content/uploads/2018/05/post_7-1.jpg\" alt=\"\"/></figure>\n\n\n\n<p>Try selecting and removing or editing the caption, now you don’t have to be careful about selecting the image or other text by mistake and ruining the presentation.</p>\n\n\n\n<h2 class=\"wp-block-heading\">The <em>Inserter</em> Tool</h2>\n\n\n\n<p>Imagine everything that WordPress can do is available to you quickly and in the same place on the interface. No need to figure out HTML tags, classes, or remember complicated shortcode syntax. That’s the spirit behind the inserter—the <code>(+)</code> button you’ll see around the editor—which allows you to browse all available content blocks and add them into your post. Plugins and themes are able to register their own, opening up all sort of possibilities for rich editing and publishing.</p>\n\n\n\n<h4 class=\"wp-block-heading\">Amazing Tables</h4>\n\n\n\n<figure class=\"wp-block-table is-style-stripes\"><table><tbody><tr><td><strong>ID</strong></td><td><strong>Name</strong></td><td><strong>Last Name</strong></td><td><strong>Profession</strong></td></tr><tr><td>1</td><td>Kazumi</td><td>Mishima</td><td>Designer</td></tr><tr><td>2</td><td>Sergei</td><td>Dragounov</td><td>Developer</td></tr><tr><td>3</td><td>Jozie</td><td>Rizal</td><td>Support</td></tr></tbody></table></figure>\n\n\n\n<p>Go give it a try, you may discover things WordPress can already add into your posts that you didn’t know about. Here’s a short list of what you can currently find there:</p>\n\n\n\n<ul>\n<li>Text &amp; Headings</li>\n\n\n\n<li>Images &amp; Videos</li>\n\n\n\n<li>Galleries</li>\n\n\n\n<li>Embeds, like YouTube, Tweets, or other WordPress posts.</li>\n\n\n\n<li>Layout blocks, like Buttons, Hero Images, Separators, etc.</li>\n\n\n\n<li>And <em>Lists</em> like this one of course 🙂</li>\n</ul>\n\n\n\n<p>Imagine everything that WordPress can do is available to you quickly and in the same place on the interface. No need to figure out HTML tags, classes, or remember complicated shortcode syntax.</p>\n\n\n\n<blockquote class=\"wp-block-quote has-text-align-center is-style-default\">\n<p>The editor will endeavor to create a new page and post building experience that makes writing rich posts effortless, and has “blocks” to make it easy what today might take shortcodes, custom HTML, or “mystery meat” embed discovery.</p>\n<cite>Matt Mullenweg, 2017</cite></blockquote>\n\n\n\n<p>The information corresponding to the source of the quote is a separate text field, similar to captions under images, so the structure of the quote is protected even if you select, modify, or remove the source. It’s always easy to add it back.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Media Rich</h2>\n\n\n\n<p>If you combine the new <strong>wide</strong> and <strong>full-wide</strong> alignments with galleries, you can create a very media rich layout, very quickly:</p>\n\n\n\n<figure class=\"wp-block-image alignfull\"><img decoding=\"async\" src=\"https://margin.deothemes.com/wp-content/uploads/2018/05/post_2-1-769x501.jpg\" alt=\"post_2\" class=\"wp-image-224\"/></figure>\n\n\n\n<p>Sure, the full-wide image can be pretty big. But sometimes the image is worth it.</p>\n\n\n\n<p>The above is a gallery with just two images. It’s an easier way to create visually appealing layouts, without having to deal with floats. You can also easily convert the gallery back to individual images again, by using the block switcher.</p>\n\n\n\n<p>Any block can opt into these alignments. The embed block has them also, and is responsive out of the box:</p>\n\n\n\n<p class=\"has-text-align-center\"><em> If you want to learn more about how to build additional blocks, or if you are interested in helping with the project, head over to the GitHub repository. </em></p>\n\n\n\n<div class=\"wp-block-button aligncenter\"><a class=\"wp-block-button__link wp-element-button\" href=\"https://deothemes.com/\">Purchase Now</a></div>\n\n\n\n<p></p>\n",
-      "protected": false
-    },
-		"excerpt": {
-      "rendered": "<p>The goal of this new editor is to make adding rich content to WordPress simple and enjoyable.</p>\n",
-      "protected": false
-    },
-		"featuredmedia": {
-			"alt_text": "Breaking One Task Down Into Bite-Size Pieces",
-			"media_details": {
-				"width": 1440,
-				"height": 972,
-				"source_url": "https://wordpress-597675-3975829.cloudwaysapps.com/wp-content/uploads/2018/05/post_5.jpg"
-			}
-		},
-		"categories": [
-			{
-				"id": 1,
-				"name": "Planning" 
-			},
-			{
-				"id": 2,
-				"name": "SEO" 
-			}
-    ]
-	},
-	{
-		"id": 6,
-		"date": "2023-05-31T04:34:12",
-    "date_gmt": "2023-05-31T04:34:12",
-		"modified": "2023-11-20T00:13:22",
-    "modified_gmt": "2023-11-20T00:13:22",
-		"slug": "get-organized-technology-is-your-friend",
-		"title": {
-      "rendered": "Get Organized &#8211; Technology is your Friend"
-    },
-		"content": {
-      "rendered": "\n<p>The goal of this new editor is to make adding rich content to WordPress simple and enjoyable. This whole post is composed of <em>pieces of content</em>—somewhat similar to LEGO bricks—that you can move around and interact with. Move your <a href=\"#\">cursor around</a> and you’ll notice the different blocks light up with outlines and arrows. Press the arrows to reposition blocks quickly, without fearing about losing things in the process of copying and pasting.</p>\n\n\n\n<p>What you are reading now is a <strong>text block</strong> the most basic block of all. The text block has its own controls to be moved freely around the post&#8230;</p>\n\n\n\n<hr class=\"wp-block-separator has-css-opacity is-style-dots\"/>\n\n\n\n<p>Headings are separate blocks as well, which helps with the outline and organization of your content.</p>\n\n\n\n<h2 class=\"wp-block-heading\">A Picture is Worth a Thousand Words</h2>\n\n\n\n<p>Handling images and media with the utmost care is a primary focus of the new editor. Hopefully, you’ll find aspects of adding captions or going full-width with your pictures much easier and robust than before.</p>\n\n\n\n<figure class=\"wp-block-image size-large\"><img decoding=\"async\" src=\"https://margin.deothemes.com/wp-content/uploads/2018/05/post_7-1.jpg\" alt=\"\"/></figure>\n\n\n\n<p>Try selecting and removing or editing the caption, now you don’t have to be careful about selecting the image or other text by mistake and ruining the presentation.</p>\n\n\n\n<h2 class=\"wp-block-heading\">The <em>Inserter</em> Tool</h2>\n\n\n\n<p>Imagine everything that WordPress can do is available to you quickly and in the same place on the interface. No need to figure out HTML tags, classes, or remember complicated shortcode syntax. That’s the spirit behind the inserter—the <code>(+)</code> button you’ll see around the editor—which allows you to browse all available content blocks and add them into your post. Plugins and themes are able to register their own, opening up all sort of possibilities for rich editing and publishing.</p>\n\n\n\n<h4 class=\"wp-block-heading\">Amazing Tables</h4>\n\n\n\n<figure class=\"wp-block-table is-style-stripes\"><table><tbody><tr><td><strong>ID</strong></td><td><strong>Name</strong></td><td><strong>Last Name</strong></td><td><strong>Profession</strong></td></tr><tr><td>1</td><td>Kazumi</td><td>Mishima</td><td>Designer</td></tr><tr><td>2</td><td>Sergei</td><td>Dragounov</td><td>Developer</td></tr><tr><td>3</td><td>Jozie</td><td>Rizal</td><td>Support</td></tr></tbody></table></figure>\n\n\n\n<p>Go give it a try, you may discover things WordPress can already add into your posts that you didn’t know about. Here’s a short list of what you can currently find there:</p>\n\n\n\n<ul>\n<li>Text &amp; Headings</li>\n\n\n\n<li>Images &amp; Videos</li>\n\n\n\n<li>Galleries</li>\n\n\n\n<li>Embeds, like YouTube, Tweets, or other WordPress posts.</li>\n\n\n\n<li>Layout blocks, like Buttons, Hero Images, Separators, etc.</li>\n\n\n\n<li>And <em>Lists</em> like this one of course 🙂</li>\n</ul>\n\n\n\n<p>Imagine everything that WordPress can do is available to you quickly and in the same place on the interface. No need to figure out HTML tags, classes, or remember complicated shortcode syntax.</p>\n\n\n\n<blockquote class=\"wp-block-quote has-text-align-center is-style-default\">\n<p>The editor will endeavor to create a new page and post building experience that makes writing rich posts effortless, and has “blocks” to make it easy what today might take shortcodes, custom HTML, or “mystery meat” embed discovery.</p>\n<cite>Matt Mullenweg, 2017</cite></blockquote>\n\n\n\n<p>The information corresponding to the source of the quote is a separate text field, similar to captions under images, so the structure of the quote is protected even if you select, modify, or remove the source. It’s always easy to add it back.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Media Rich</h2>\n\n\n\n<p>If you combine the new <strong>wide</strong> and <strong>full-wide</strong> alignments with galleries, you can create a very media rich layout, very quickly:</p>\n\n\n\n<figure class=\"wp-block-image alignfull\"><img decoding=\"async\" src=\"https://margin.deothemes.com/wp-content/uploads/2018/05/post_2-1-769x501.jpg\" alt=\"post_2\" class=\"wp-image-224\"/></figure>\n\n\n\n<p>Sure, the full-wide image can be pretty big. But sometimes the image is worth it.</p>\n\n\n\n<p>The above is a gallery with just two images. It’s an easier way to create visually appealing layouts, without having to deal with floats. You can also easily convert the gallery back to individual images again, by using the block switcher.</p>\n\n\n\n<p>Any block can opt into these alignments. The embed block has them also, and is responsive out of the box:</p>\n\n\n\n<p class=\"has-text-align-center\"><em> If you want to learn more about how to build additional blocks, or if you are interested in helping with the project, head over to the GitHub repository. </em></p>\n\n\n\n<div class=\"wp-block-button aligncenter\"><a class=\"wp-block-button__link wp-element-button\" href=\"https://deothemes.com/\">Purchase Now</a></div>\n\n\n\n<p></p>\n",
-      "protected": false
-    },
-		"excerpt": {
-      "rendered": "<p>The goal of this new editor is to make adding rich content to WordPress simple and enjoyable.</p>\n",
-      "protected": false
-    },
-		"featuredmedia": {
-			"alt_text": "Get Organized &#8211; Technology is your Friend",
-			"media_details": {
-				"width": 1440,
-				"height": 972,
-				"source_url": "https://wordpress-597675-3975829.cloudwaysapps.com/wp-content/uploads/2018/05/post_6.jpg"
-			}
-		},
-		"categories": [
-			{
-				"id": 1,
-				"name": "Planning" 
-			},
-			{
-				"id": 2,
-				"name": "Tips" 
-			}
-    ]
-	}
+    {
+        "id":  6,
+        "date":  "2026-06-09T09:12:00",
+        "date_gmt":  "2026-06-09T08:12:00",
+        "modified":  "2026-06-30T16:20:00",
+        "modified_gmt":  "2026-06-30T15:20:00",
+        "slug":  "we-hand-over-the-code",
+        "title":  {
+                      "rendered":  "Why We Hand Over the Code, the Repo, and the Keys"
+                  },
+        "content":  {
+                        "rendered":  "\u003cp\u003eThe test of a software project is not whether the demo went well. It is what happens on the day we stop being involved.\u003c/p\u003e\n\n\u003ch2\u003eYou should be able to replace us\u003c/h2\u003e\n\u003cp\u003eIf a project cannot survive its original authors leaving, it was never finished. We make sure your team can run, deploy, debug, and extend the codebase without calling us, and we prove it by walking your people through it before we hand over.\u003c/p\u003e\n\n\u003ch2\u003eDocumentation that matches reality\u003c/h2\u003e\n\u003cp\u003eA README written last week describing a system that changed on Tuesday is worse than none, because it is trusted. We write documentation against what is actually deployed, and we update it as part of the work rather than as a separate task at the end.\u003c/p\u003e\n\n\u003ch2\u003eNo hostage architecture\u003c/h2\u003e\n\u003cp\u003eWe do not build things that only work through us. If your project depends on a proprietary framework we wrote and only we understand, you do not own it. You rented it.\u003c/p\u003e\n\n\u003cblockquote\u003e\u003cp\u003eEverything we build lives in your repository, under your accounts, with your domain.\u003c/p\u003e\u003c/blockquote\u003e\n\n\u003ch2\u003eWhat we keep\u003c/h2\u003e\n\u003cp\u003eWe are happy to keep maintaining it, on a retainer you can end. The difference is that you never have to.\u003c/p\u003e"
+                    },
+        "excerpt":  {
+                        "rendered":  "The test of a software project is not whether the demo went well. It is what happens the day we stop being involved."
+                    },
+        "categories":  [
+                           {
+                               "id":  12,
+                               "name":  "Process"
+                           },
+                           {
+                               "id":  18,
+                               "name":  "Open Source"
+                           }
+                       ],
+        "author":  {
+                       "name":  "TECHCORE",
+                       "avatar_urls":  {
+                                           "24":  "/team/1.jpg",
+                                           "48":  "/team/1.jpg",
+                                           "96":  "/team/1.jpg"
+                                       }
+                   },
+        "yoast_head_json":  {
+                                "description":  "Why every TECHCORE project ships with the code, the repo, and the keys in your hands.",
+                                "og_description":  "If a project cannot survive its authors leaving, it was never finished."
+                            },
+        "featuredmedia":  {
+                              "alt_text":  "Source code open in an editor on a monitor",
+                              "media_details":  {
+                                                    "width":  1200,
+                                                    "height":  800,
+                                                    "source_url":  "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format\u0026fit=crop\u0026w=1200\u0026q=85"
+                                                }
+                          }
+    }
 ]

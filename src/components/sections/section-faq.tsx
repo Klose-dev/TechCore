@@ -12,33 +12,36 @@ const accordionItems = [
   {
     title: "What is TECHCORE?",
     content:
-      "TECHCORE is a developer community focused on learning, collaboration, innovation, and building real-world technology solutions.",
+      "TECHCORE is a small senior software team in Yaounde, Cameroon. We design and build web apps, desktop apps, mobile apps, AI tools, and data systems, from discovery to launch in 30 days.",
   },
   {
-    title: "Who can join TECHCORE?",
+    title: "Who do you work with?",
     content:
-      "Developers and technology enthusiasts at different levels can participate and contribute to the community.",
+      "A small senior team based in Yaounde, Cameroon. You talk directly to the engineers building your product, not to an account manager.",
   },
   {
-    title: "Do I need to be an experienced developer?",
+    title: "How long does a project take?",
     content:
-      "No. TECHCORE encourages continuous learning and growth. Beginners can learn while experienced developers can share their knowledge.",
+      "Most projects run on a 30-day sprint. Discovery happens in the first week, you see working software every week after that, and we ship to production on day thirty.",
   },
   {
     title: "What does TECHCORE build?",
     content:
-      "Our projects can range from websites and software applications to AI systems, APIs, and other technology solutions.",
+      "Web applications, mobile and desktop apps, AI integrations and automation, and data pipelines with dashboards and reporting.",
   },
   {
-    title: "Can I contribute to TECHCORE projects?",
+    title: "What does a sprint cost?",
     content:
-      "Yes. Collaboration is one of the core principles of TECHCORE.",
+      "It depends on scope, so we agree the scope before we start and give you the number once. No surprise invoices and no change orders halfway through.",
   },
 ];
 
-const SectionFAQ = () => {
+const SectionFAQ = ({ id }: { id?: string }) => {
   return (
-    <section className="relative overflow-hidden py-24 dark:bg-slate-900 lg:py-32">
+    <section
+      id={id}
+      className="relative overflow-hidden py-24 dark:bg-slate-900 lg:py-32"
+    >
       <div className="container">
         <div className="flex flex-wrap items-center justify-between lg:flex-nowrap">
           <div className="lg:w-[45%] lg:pr-10">
@@ -52,7 +55,7 @@ const SectionFAQ = () => {
             >
               <h2>Frequently Asked Questions</h2>
               <p className="mb-8 text-lg">
-                Everything you need to know about how TECHCORE works, who it is for, and what kind of projects we build.
+                Everything you need to know about how we work, what we build, and what a 30-day sprint looks like.
               </p>
               <Accordion
                 type="multiple"

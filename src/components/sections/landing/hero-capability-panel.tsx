@@ -1,8 +1,9 @@
 import { useEffect, useRef, useState } from "react"
-import { AnimatePresence, motion, useInView, useReducedMotion } from "framer-motion"
+import { motion, useInView, useReducedMotion } from "framer-motion"
 import { Check, Globe, Monitor, Smartphone, Sparkles, BarChart3 } from "lucide-react"
 
 import RaysBackground from "@/components/lightswind/rays-background"
+import { CapabilityVisual } from "./hero-capability-visuals"
 
 type Capability = {
   id: string
@@ -117,7 +118,7 @@ const HeroCapabilityPanel = () => {
                 onClick={() => select(id)}
                 className={`inline-flex items-center gap-2 rounded-full border px-4 py-2 text-sm font-bold transition-colors ${
                   activeId === id
-                    ? "border-primary bg-primary text-white"
+                      ? "border-primary bg-primary text-primary-foreground"
                     : "border-border text-secondary hover:border-primary hover:text-primary"
                 }`}
               >
@@ -128,14 +129,14 @@ const HeroCapabilityPanel = () => {
           </div>
 
           <div className="min-h-[188px]">
-            <AnimatePresence mode="wait">
-              <motion.div
-                key={active.id}
-                initial={reduceMotion ? false : { opacity: 0, y: 12 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={reduceMotion ? undefined : { opacity: 0, y: -8 }}
-                transition={{ duration: 0.32, ease: EASE }}
-              >
+            <motion.div
+              key={active.id}
+              initial={reduceMotion ? false : { opacity: 0, y: 12 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.32, ease: EASE }}
+              className="grid items-center gap-6 sm:grid-cols-[1fr_auto]"
+            >
+              <div>
                 <div className="mb-3 flex items-center gap-3">
                   <span className="flex h-10 w-10 items-center justify-center rounded-md bg-accent-soft text-primary">
                     <ActiveIcon width={20} height={20} />
@@ -160,8 +161,12 @@ const HeroCapabilityPanel = () => {
                     </li>
                   ))}
                 </ul>
-              </motion.div>
-            </AnimatePresence>
+              </div>
+
+              <div className="h-40 w-full sm:h-44 sm:w-44">
+                <CapabilityVisual id={active.id} />
+              </div>
+            </motion.div>
           </div>
         </div>
       </div>
@@ -197,7 +202,7 @@ const HeroCapabilityPanel = () => {
                 <motion.span
                   className={`flex h-8 w-8 items-center justify-center rounded-full border-2 text-xs font-bold ${
                     stage.status === "done"
-                      ? "border-primary bg-primary text-white"
+                    ? "border-primary bg-primary text-primary-foreground"
                       : stage.status === "active"
                         ? "border-primary bg-surface text-primary"
                         : "border-border bg-surface text-secondary"

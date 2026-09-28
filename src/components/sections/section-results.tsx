@@ -1,24 +1,16 @@
-const SectionResults = () => {
+const SectionResults = ({ id }: { id?: string }) => {
   return (
-    <section className="bg-muted py-16 dark:bg-slate-900 lg:py-24">
+    <section id={id} className="bg-muted py-16 dark:bg-slate-900 lg:py-24">
       <div className="container">
         <div className="flex flex-wrap items-center lg:flex-nowrap lg:space-x-16">
           <div className="w-full lg:w-[54%] lg:pr-20">
             <h2 className="mb-5 max-w-md">
-              We accelerate your digital transformation with our very unique
-              digital approach
+              How a 30-day sprint actually runs
             </h2>
             <p className="mb-8 text-lg">
-              As you may already know, there are an infinite number of things
-              you can test on your site to help you increase sales.
-            </p>
-            <p className="mb-10">
-              As you may already know, there are an infinite number of things
-              you can test on your site to help you increase sales. From layout
-              to copy to design, there are limitless combinations of changes
-              that may improve your visitor-to-sale conversion rate. But what’s
-              “enough” when you’re just starting out? What elements should you
-              focus on testing before rolling out your traffic campaign?
+              Discovery in the first week, working software every week after,
+              and a production release on day thirty. Here is what that looks
+              like in practice.
             </p>
           </div>
           <div className="w-full lg:w-[46%]">
@@ -26,36 +18,36 @@ const SectionResults = () => {
               <div className="w-full lg:w-1/2">
                 <div className="hover-shadow mb-10 rounded bg-white p-12 dark:bg-slate-800">
                   <span className="text-green mb-3 block text-3xl font-bold md:text-5xl">
-                    30%
+                    40+
                   </span>
                   <span className="text-md font-medium text-foreground dark:text-white">
-                    Lower cost per acquisition
+                    Projects shipped
                   </span>
                 </div>
                 <div className="hover-shadow mb-10 rounded bg-white p-12 dark:bg-slate-800">
                   <span className="text-green mb-3 block text-3xl font-bold md:text-5xl">
-                    150%
+                    25+
                   </span>
                   <span className="text-md font-medium text-foreground dark:text-white">
-                    More organic traffic
+                    Happy clients
                   </span>
                 </div>
               </div>
               <div className="w-full lg:mt-10 lg:w-1/2">
                 <div className="hover-shadow mb-10 rounded bg-white p-12 dark:bg-slate-800">
                   <span className="text-green mb-3 block text-3xl font-bold md:text-5xl">
-                    86%
+                    30
                   </span>
                   <span className="text-md font-medium text-foreground dark:text-white">
-                    More inbound leads
+                    Day sprint cycle
                   </span>
                 </div>
                 <div className="hover-shadow rounded bg-white p-12 dark:bg-slate-800">
                   <span className="text-green mb-3 block text-3xl font-bold md:text-5xl">
-                    24%
+                    100%
                   </span>
                   <span className="text-md font-medium text-foreground dark:text-white">
-                    Decrease in bounce rate
+                    On-time delivery
                   </span>
                 </div>
               </div>

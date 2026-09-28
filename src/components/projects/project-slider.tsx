@@ -56,9 +56,9 @@ export default function ProjectSlider({
 
         <div className="projects-slider relative">
           <Swiper {...swiperParams} ref={sliderRef}>
-            {data?.slice(0, limit).map((project: Post) => (
+            {data?.slice(0, limit).map((project: Post, index: number) => (
               <SwiperSlide key={project.id}>
-                <ProjectCard project={project} />
+                <ProjectCard project={project} index={index} />
               </SwiperSlide>
             ))}
           </Swiper>

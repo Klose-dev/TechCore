@@ -1,4 +1,3 @@
-import useFramerTransition from "@/hooks/use-transition";
 import BlogComments from "@/components/blog-comments";
 import { getDate } from "@/lib/utils";
 import {
@@ -19,7 +18,7 @@ const featuredMedia = PostData[0].featuredmedia;
 const author = post?.author;
 const featuredImageSizes = featuredMedia?.["media_details"];
 
-const SinglePost = useFramerTransition(
+const SinglePost = () => (
 	<>
 		<Helmet>
 			<title>Single Post</title>

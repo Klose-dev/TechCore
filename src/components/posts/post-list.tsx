@@ -12,12 +12,14 @@ type PostListProps = {
   limit: number;
   showPagination: boolean;
   grid?: string;
+  id?: string;
 };
 
 export default function PostList({
   limit,
   grid,
   showPagination,
+  id,
 }: PostListProps) {
   const [_, setTotalItems] = useState<number | null>(null);
 
@@ -31,8 +33,7 @@ export default function PostList({
 
   const getTotalItems = useCallback(async () => {
     try {
-      const total = 12
-      setTotalItems(total);
+      setTotalItems(limit);
     } catch (error) {
       console.error("Error fetching data:", error);
     }
@@ -45,7 +46,7 @@ export default function PostList({
   if (error) return 'An error has occurred: ' + error.message
 
   const content = (
-    <>
+    <div id={id}>
       <div className={cn("grid grid-cols-1 gap-10 lg:grid-cols-3", grid)}>
         
         {isPending &&
@@ -53,8 +54,8 @@ export default function PostList({
             <Skeleton key={i} className="h-[33rem] w-full" />
         ))}
 
-        {data?.slice(0, limit).map((post: Post) => {
-          return <PostCard post={post} key={post.id} />;
+        {data?.slice(0, limit).map((post: Post, index: number) => {
+          return <PostCard post={post} key={post.id} index={index} />;
         })}
       </div>
       {data?.length && showPagination ? (
@@ -64,7 +65,7 @@ export default function PostList({
           >Load more</Button>
         </div>
       ) : null}
-    </>
+    </div>
   );
 
   return content;

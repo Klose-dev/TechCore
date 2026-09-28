@@ -5,6 +5,31 @@
 @layer base {
   :root {
     --radius: 0.5rem;
+    --header-offset: 6rem;
+
+    /* Brand green. Overridden to orange in dark mode below. */
+    --primary: 0 122 62;
+    --primary-dark: 0 92 48;
+    --primary-foreground: 255 255 255;
+  }
+
+  .dark {
+    /* Dark mode brand colour. The green reads as mud on near-black, so the
+       primary switches to the palette orange already used for accents. */
+    --primary: 255 179 102;
+    --primary-dark: 194 65 12;
+    --primary-foreground: 26 31 27;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: var(--header-offset);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
   }
 
   * {
@@ -188,8 +213,13 @@
     color: #9db3a6;
   }
 
+  /* Uses the --primary variable so dark mode resolves to the brand orange. */
   .dark .text-primary {
-    color: #5fb584;
+    color: rgb(var(--primary));
+  }
+
+  .dark .text-primary-dark {
+    color: rgb(var(--primary-dark));
   }
 
   .text-slate-400 {
@@ -265,26 +295,4 @@
   .color-scheme-initial {
     color-scheme: initial;
   }
-}
-
-.slide-in {
-  @apply bg-slate-800;
-  position: fixed;
-  z-index: 999;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  transform-origin: bottom;
-}
-
-.slide-out {
-  @apply bg-slate-800;
-  position: fixed;
-  z-index: 999;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  transform-origin: top;
 }

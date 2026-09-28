@@ -3,60 +3,60 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 export const serviceTabs = [
   {
-    id: "digital-marketing",
-    title: "Digital Marketing",
+    id: "web-apps",
+    title: "Web Apps",
     content: {
-      title: "Increase traffic and get more leads",
+      title: "Web applications your team can rely on",
       subtitle:
-        "As you may already know, there are an infinite number of things you can test on your site to help you increase sales. From layout to to design, there are limitless combinations.",
-      text: "As you may already know, there are an infinite number of things you can test on your site to help you increase sales. From layout to copy to design, there are limitless combinations.",
-      cta: "Order now",
+        "Dashboards, portals, and internal tools built on a stack your engineers can maintain.",
+      text: "We build the whole thing: data model, API, interface, and deployment. You get a working product in week one, not a wireframe and a roadmap. Every sprint ends with something deployed.",
+      cta: "Start a project",
       image: "services/service_1.jpg",
     },
   },
   {
-    id: "seo-and-ppc",
-    title: "SEO and PPC",
+    id: "mobile-apps",
+    title: "Mobile Apps",
     content: {
-      title: "Leverage Google Ads",
+      title: "Cross-platform apps that work on slow connections",
       subtitle:
-        "As you may already know, there are an infinite number of things you can test on your site to help you increase sales. From layout to to design, there are limitless combinations.",
-      text: "As you may already know, there are an infinite number of things you can test on your site to help you increase sales. From layout to copy to design, there are limitless combinations.",
-      cta: "Order now",
+        "One codebase, iOS and Android, tuned for the networks your users actually have.",
+      text: "We design for the phone in a user's hand, not the screen in a design file. Offline states, small payloads, and fast first paint are part of the build. You get a store-ready build at the end of the sprint.",
+      cta: "Start a project",
       image: "services/service_2.jpg",
     },
   },
   {
-    id: "marketing-analytics",
-    title: "Marketing Analytics",
+    id: "ai-tools",
+    title: "AI Tools",
     content: {
-      title: "Measuring, managing and analyzing marketing performance",
+      title: "LLM features tuned to how you already work",
       subtitle:
-        "As you may already know, there are an infinite number of things you can test on your site to help you increase sales. From layout to to design, there are limitless combinations.",
-      text: "As you may already know, there are an infinite number of things you can test on your site to help you increase sales. From layout to copy to design, there are limitless combinations.",
-      cta: "Order now",
+        "Assistants, extraction, and automation added to the product you already run.",
+      text: "We start by finding the slow, repetitive part of your workflow and putting a model on it. Prompts, retrieval, and evaluation are part of the engineering, not an afterthought. If AI does not earn its keep in the sprint, we will tell you.",
+      cta: "Start a project",
       image: "services/service_3.jpg",
     },
   },
   {
-    id: "content-marketing",
-    title: "Content Marketing",
+    id: "data-systems",
+    title: "Data Systems",
     content: {
-      title: "Attract and retain a clearly defined audience",
+      title: "Pipelines and dashboards you can defend",
       subtitle:
-        "As you may already know, there are an infinite number of things you can test on your site to help you increase sales. From layout to to design, there are limitless combinations.",
-      text: "As you may already know, there are an infinite number of things you can test on your site to help you increase sales. From layout to copy to design, there are limitless combinations.",
-      cta: "Order now",
+        "Clean data, reproducible jobs, and reporting the business can read without help.",
+      text: "We map where your data comes from, fix the gaps, and put it behind dashboards people actually open. Pipelines are versioned and monitored, so a broken job is a page, not a mystery. You get the schema and the runbook too.",
+      cta: "Start a project",
       image: "services/service_4.jpg",
     },
   },
 ];
 
-const SectionServiceTabs = () => {
+const SectionServiceTabs = ({ id }: { id?: string }) => {
   return (
-    <section className="relative py-16 lg:py-24">
+    <section id={id} className="relative py-16 lg:py-24">
       <div className="container max-w-5xl">
-        <Tabs defaultValue="digital-marketing">
+        <Tabs defaultValue="web-apps">
           <TabsList className="mb-10 md:mb-20">
             {serviceTabs.map((serviceTab) => (
               <TabsTrigger key={serviceTab.id} value={serviceTab.id}>

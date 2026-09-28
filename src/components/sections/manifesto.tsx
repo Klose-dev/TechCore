@@ -16,11 +16,14 @@ const PHRASES = [
   "Build together. Learn faster. Create what matters.",
 ]
 
-const Manifesto = () => {
+const Manifesto = ({ id }: { id?: string }) => {
   const variants = useRevealVariants()
 
   return (
-    <section className="relative overflow-hidden border-y border-border bg-white py-20 dark:bg-slate-900 lg:py-28">
+    <section
+      id={id}
+      className="relative overflow-hidden border-y border-border bg-white py-20 dark:bg-slate-900 lg:py-28"
+    >
       <RaysBackground color="#008A48" opacity={0.07} rays={16} angle={190} />
 
       <div className="container relative">

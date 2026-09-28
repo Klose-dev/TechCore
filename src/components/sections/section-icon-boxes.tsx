@@ -1,59 +1,59 @@
 import { motion } from "framer-motion";
 import IconBox from "@/components/icon-box";
+import {
+  CARD_HOVER,
+  CARD_HOVER_SPRING,
+  revealViewport,
+  useRevealVariants,
+} from "@/components/ui/motion";
 
 export const iconBoxes = [
   {
-    icon: "icons/medical-research-6506_05214fe4-cb2e-4171-ac03-72168bf2981b.svg",
-    title: "Learn",
+    icon: "icons/software-service-2045_e40b986c-38b0-4c8f-b7a3-b5e6ce091b6a.svg",
+    title: "Web Apps",
     description:
-      "Sharpen your skills through practical learning, code reviews, and shared technical knowledge.",
+      "Fast, accessible web applications on a modern stack, built to scale with your team instead of against it.",
   },
   {
-    icon: "icons/edit-document-4191_913956ad-aac3-4d29-b4ef-061756334d24.svg",
-    title: "Build",
+    icon: "icons/smartphone-4897_aa627869-d7e7-4f56-84f6-f23923d72bf4.svg",
+    title: "Mobile Apps",
     description:
-      "Create real-world products, prototypes, and digital experiences that solve meaningful problems.",
+      "Cross-platform mobile experiences that feel native on every device, even on slow rural connections.",
   },
   {
-    icon: "icons/currency-2634_d41cd9f8-1db2-4236-b082-94568e599e40.svg",
-    title: "Collaborate",
+    icon: "icons/puzzle-2058_36759580-64eb-459e-bc98-511d2b9a045d.svg",
+    title: "AI Tools",
     description:
-      "Work with developers from different backgrounds and disciplines to build stronger solutions.",
+      "LLM integrations and intelligent automation tuned to the way your team already works.",
   },
   {
-    icon: "icons/medical-research-6506_05214fe4-cb2e-4171-ac03-72168bf2981b.svg",
-    title: "Innovate",
+    icon: "icons/data-app-2057_cdd8fbaf-0caf-4a7b-9644-9004976bca94.svg",
+    title: "Data Systems",
     description:
-      "Explore new technologies, test ideas, and develop the next generation of smart tools.",
+      "Pipelines, dashboards, and reporting that turn scattered raw data into decisions you can defend.",
   },
 ];
 
-const fadeInAnimationVariants = {
-  initial: {
-    opacity: 0,
-    y: 60,
-  },
-  animate: (index: number) => ({
-    opacity: 1,
-    y: 0,
-    transition: {
-      delay: 0.05 * index,
-    },
-  }),
-};
+const SectionIconBoxes = ({
+  noTitle,
+  id,
+}: {
+  noTitle?: boolean;
+  id?: string;
+}) => {
+  const variants = useRevealVariants();
 
-const SectionIconBoxes = ({ noTitle }: { noTitle?: boolean }) => {
   return (
-    <section className="py-16 lg:py-24">
+    <section id={id} className="py-16 lg:py-24">
       <div className="container">
         {!noTitle && (
           <div className="flex justify-center">
             <div className="text-center lg:w-3/5">
               <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-primary">
-                Community Growth
+                What We Build
               </p>
               <h2 className="mb-12">
-                We learn, build, collaborate, and innovate together.
+                Software that solves a real problem, not a slide deck.
               </h2>
             </div>
           </div>
@@ -64,14 +64,13 @@ const SectionIconBoxes = ({ noTitle }: { noTitle?: boolean }) => {
             return (
               <motion.div
                 key={iconBox.title}
-                variants={fadeInAnimationVariants}
-                initial="initial"
-                whileInView="animate"
-                viewport={{ once: true }}
-                transition={{
-                  delay: 0.5,
-                }}
+                variants={variants}
+                initial="hidden"
+                whileInView="show"
+                viewport={revealViewport}
                 custom={index}
+                whileHover={{ ...CARD_HOVER, transition: CARD_HOVER_SPRING }}
+                className="h-full"
               >
                 <IconBox iconBox={iconBox} />
               </motion.div>
