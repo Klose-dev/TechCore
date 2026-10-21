@@ -1,6 +1,6 @@
 import { lazy, Suspense } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import BackToTop from "@/components/back-to-top";
 import ScrollToTop from "@/components/scroll-to-top";
 import { Toaster } from "sonner";
@@ -29,6 +29,7 @@ const queryClient = new QueryClient();
 
 function App() {
   const location = useLocation();
+  const prefersReducedMotion = useReducedMotion();
 
   return (
     <>
@@ -38,10 +39,25 @@ function App() {
           <AnimatePresence mode="wait" initial={false}>
             <motion.div
               key={location.pathname}
-              initial={{ opacity: 0, y: 12 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -8 }}
-              transition={{ duration: 0.3, ease: EASE }}
+              initial={
+                prefersReducedMotion
+                  ? false
+                  : { opacity: 0, y: 12 }
+              }
+              animate={
+                prefersReducedMotion
+                  ? { opacity: 1 }
+                  : { opacity: 1, y: 0 }
+              }
+              exit={
+                prefersReducedMotion
+                  ? { opacity: 1 }
+                  : { opacity: 0, y: -8 }
+              }
+              transition={{
+                duration: prefersReducedMotion ? 0 : 0.3,
+                ease: EASE,
+              }}
             >
               <Routes location={location}>
                 <Route index element={<Home />} />
